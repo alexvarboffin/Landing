@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_contest">Promotions</string>
+    <string name="nav_faq">FAQ</string>
+    <string name="nav_advantages">Benefits</string>
+    <string name="nav_trading">Trading</string>
+    <string name="nav_affiliate_program">Affiliate Program</string>
+    <string name="nav_live_spreads">Live Spreads</string>
+</resources>

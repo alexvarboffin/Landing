@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "167960802575",
+    "project_id": "kwkprm4u",
+    "storage_bucket": "kwkprm4u.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:167960802575:android:ecbe0e0a939781fafa7a7a",
+        "android_client_info": {
+          "package_name": "com.prm4u.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDe2etHvkDNh0DaCKKvX_sZvedx-uyQulQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

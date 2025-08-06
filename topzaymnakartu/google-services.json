@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "68606204128",
+    "project_id": "kwktopzaymnakartu",
+    "storage_bucket": "kwktopzaymnakartu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:68606204128:android:89fbfaf541563f14929885",
+        "android_client_info": {
+          "package_name": "com.topzaymnakartu.online24.android"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB47089xNJDwW3wrroqrQDsRqRTubISXiI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

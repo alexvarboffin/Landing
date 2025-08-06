@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "74075942666",
+    "project_id": "kwklandnocook",
+    "storage_bucket": "kwklandnocook.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:74075942666:android:80e19c809bfee66036d4f3",
+        "android_client_info": {
+          "package_name": "com.kwknocook.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGnfyNEvmtrjjuoGL9FgglYK2t2WajfNo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

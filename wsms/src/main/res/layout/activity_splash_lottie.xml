@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <!-- @drawable/drawable_purple_gradient  @drawable/drawable_gradient_animation_list android:background="@color/white"-->
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/bg0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="bga.json"
+        app:lottie_loop="false"
+        app:lottie_repeatCount="1"
+        android:scaleType="fitXY"
+        app:lottie_repeatMode="restart" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <!--    @drawable/bg0-->
+        <!--    #00BFA5 #1B6200EA-->
+        <!--    @drawable/splashgradient5-->
+
+        <!--    <ImageView-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="match_parent"-->
+        <!--        android:layout_centerInParent="true"-->
+        <!--        android:adjustViewBounds="false"-->
+        <!--        android:background="@drawable/ic_sber"-->
+        <!--        android:contentDescription="@null"-->
+        <!--        android:scaleType="centerCrop" />-->
+
+        <!--    <ImageView-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_centerInParent="true"-->
+        <!--        android:adjustViewBounds="true"-->
+        <!--        android:background="@drawable/ic_407"-->
+        <!--        android:contentDescription="@null"-->
+        <!--        android:scaleType="centerCrop" />-->
+
+        <!--            <View-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:background="#FD7821" />-->
+        <!--    <View-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="match_parent"-->
+        <!--        android:background="@drawable/drawable_gradient_animation_list" />-->
+
+        <RelativeLayout
+            android:layout_width="326dp"
+            android:layout_height="346dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp">
+
+            <!--        <pl.bclogic.pulsator4droid.library.PulsatorLayout-->
+            <!--            android:id="@+id/pulsator"-->
+            <!--            android:layout_width="326dp"-->
+            <!--            android:layout_height="446dp"-->
+            <!--            android:layout_alignParentTop="true"-->
+            <!--            android:layout_centerInParent="true"-->
+            <!--            android:layout_centerHorizontal="true"-->
+            <!--            app:pulse_color="#C1E6E8"-->
+            <!--            app:pulse_count="1"-->
+            <!--            app:pulse_duration="1800"-->
+            <!--            app:pulse_interpolator="Linear"-->
+            <!--            app:pulse_repeat="1"-->
+            <!--            app:pulse_startFromScratch="true" />-->
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/imgsplashicon"
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/app_name"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="microchecker.json"
+                app:lottie_loop="false"
+                app:lottie_repeatCount="5"
+                app:lottie_repeatMode="restart" />
+
+        </RelativeLayout>
+
+        <pl.bclogic.pulsator4droid.library.PulsatorLayout
+            android:id="@+id/pulsator"
+            android:layout_width="326dp"
+            android:layout_height="446dp"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            app:pulse_color="#C1E6E8"
+            app:pulse_count="1"
+            app:pulse_duration="1800"
+            app:pulse_interpolator="Linear"
+            app:pulse_repeat="1"
+            app:pulse_startFromScratch="true">
+
+
+        </pl.bclogic.pulsator4droid.library.PulsatorLayout>
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/cpiBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:indicatorSize="122.0dip"
+            app:trackColor="@color/color_white_32"
+            app:trackThickness="2.0dip" />
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/cpiProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="false"
+            app:indicatorColor="@color/color_brand_progress_bar"
+            app:indicatorSize="124.0dip"
+            app:trackCornerRadius="16.0dip"
+            app:trackThickness="4.0dip" />
+
+<!--        <ImageView-->
+<!--            android:layout_width="110dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:contentDescription="@string/app_name"-->
+<!--            android:src="@drawable/ic_splash" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:gravity="center"
+                android:text="@string/app_name_splash"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textVer"
+                style="@style/Re.TextView.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:text="@string/app_name" />
+
+            <!--        <TextView-->
+            <!--            android:id="@+id/timer"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_marginTop="15dp"-->
+            <!--            android:textAppearance="?android:attr/textAppearanceMedium"-->
+            <!--            android:textColor="@android:color/black" />-->
+
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

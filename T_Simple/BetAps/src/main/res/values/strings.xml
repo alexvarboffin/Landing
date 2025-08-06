@@ -1,0 +1,33 @@
+<resources>
+
+    <string name="app_name" translatable="false">BetAps</string>
+    <string name="app_name_splash" translatable="false">BetAps</string>
+
+    <string name="play_google_pub" translatable="false">BetAps</string>
+    <string name="url_privacy_policy" translatable="false">mobile.yoshop.tj/privacy.pdf</string>
+    <string name="url_privacy_rules" translatable="false">mobile.yoshop.tj/rules.pdf</string>
+
+
+    <string name="publisher_feedback_email" translatable="false">support@BetAps.net</string>
+
+
+    <string name="app_description" translatable="false">
+Вся информация представленная в приложении, касающаяся обзоров букмекеров, его функциональности, носит информационный характер, и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 (2) Гражданского кодекса РФ. Вход 18+ BetAps © 2024
+
+    </string>
+
+    <string name="launcher_progress_title_first">© %1$d,  Фрибеты, Бонусы,\nПромокоды Букмекерских контор.</string>
+
+    <string name="launcher_progress_title_second">All rights reserved</string>
+    <string name="launcher_progress_title_three">
+    Важно! Об ответственной игре:
+1. Приложение направлено на взрослую аудиторию (18+);
+2. Вся информация в приложении носит информационный характер;
+3. Ставки на спорт – это форма развлечений, а не способ заработка;
+4. Доверяйте БК, которые прошли проверку на сайте Рейтинг Букмекеров;
+5. Приложение не дает возможность совершать ставки на реальные деньги.
+</string>
+
+
+    <!--    Вся информация представленная в приложении, касающаяся обзоров букмекеров, его функциональности, носит информационный характер, и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 (2) Гражданского кодекса РФ. Вход 18+ Copyright © 2024 Фрибеты, Бонусы, Промокоды Букмекерских контор.-->
+</resources>

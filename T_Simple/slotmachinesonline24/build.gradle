@@ -1,0 +1,105 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.jetbrains.kotlin.android'
+
+android {
+
+    compileSdk = libs.versions.android.compileSdk.get().toInt()
+    buildToolsVersion = libs.versions.android.buildTools.get()
+
+    namespace 'com.slotmachinesonline24.client'
+
+    android.defaultConfig.vectorDrawables.setUseSupportLibrary(true)
+
+    def code = versionCodeDate()
+
+    defaultConfig {
+
+        vectorDrawables.useSupportLibrary = true
+        applicationId "com.slotmachinesonline24.client"
+        minSdk = libs.versions.android.minSdk.get().toInt()
+        targetSdk = libs.versions.android.targetSdk.get().toInt()
+        versionCode code
+        versionName "1.4." + code
+        setProperty("archivesBaseName", "slotmachinesonline24" + code)
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+
+
+    signingConfigs {
+
+        key0 {
+            keyAlias 'slotmachinesonline24'
+            keyPassword 'release'
+            storeFile file('D:\\kwork\\WebView\\Landing\\keystore\\keystore.jks')
+            storePassword 'release'
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.key0
+            versionNameSuffix "-DEMO"
+        }
+        release {
+            minifyEnabled true
+            shrinkResources false
+            //proguardFiles getDefaultProguardFile('proguard-android.txt'), "proguard-rules.pro"
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            //debuggable false
+            //jniDebuggable false
+            signingConfig signingConfigs.key0
+            versionNameSuffix ".b"
+        }
+    }
+    buildFeatures {
+        viewBinding true
+        buildConfig true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation(libs.androidx.appcompat)
+    implementation libs.material
+
+    //Firebase Crashlytics
+//    implementation "com.google.firebase:firebase-crashlytics:$rootProject.crashlyticsVersion"
+//    implementation "com.google.firebase:firebase-analytics:$rootProject.analyticsVersion"
+
+    //Optional
+    //implementation "com.google.firebase:firebase-database:$rootProject.firebaseDatabase"
+    //implementation 'com.google.firebase:firebase-messaging:23.3.0'
+
+
+
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+//    implementation('com.google.android.gms:play-services-ads:17.2.0') {
+//        exclude group: 'com.android.support'
+//    }
+    implementation project(path: ':features:ui')
+    implementation project(path: ':features:landing')
+    //implementation project(path: ':corelib')
+    //implementation project(':stubInjector')
+
+    //implementation 'com.google.android.gms:play-services-location:16.0.99'
+    //implementation 'com.google.firebase:firebase-messaging:17.3.99'
+    //implementation 'com.google.android.gms:play-services-ads-identifier:16.0.99'
+    //implementation 'com.google.android.gms:play-services-base:16.1.99'
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$rootProject.lifecycle_version"
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    //implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.22"//kotlin plugin version-> 1.7.1
+    implementation 'com.google.code.gson:gson:2.10.1'
+
+    //features
+    //implementation 'com.appsflyer:af-android-sdk:6.12.1'
+
+}
+

@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "283281351678",
+    "firebase_url": "https://winlinebetting-default-rtdb.firebaseio.com",
+    "project_id": "winlinebetting",
+    "storage_bucket": "winlinebetting.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:283281351678:android:c8cf1d71280187538696af",
+        "android_client_info": {
+          "package_name": "com.ivanbet.sport.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "283281351678-95r9hdefjgdophc3e5spq2bi8k9k8kkl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIiSkImXFlVn9ky6y3PHPScJSmLmaxfq4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "283281351678-95r9hdefjgdophc3e5spq2bi8k9k8kkl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:283281351678:android:c105c0c149ee55b38696af",
+        "android_client_info": {
+          "package_name": "com.sport.matches.winline.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "283281351678-95r9hdefjgdophc3e5spq2bi8k9k8kkl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIiSkImXFlVn9ky6y3PHPScJSmLmaxfq4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "283281351678-95r9hdefjgdophc3e5spq2bi8k9k8kkl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

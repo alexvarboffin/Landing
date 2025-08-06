@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="pref_default_selected_labels">
+<!--        <item>HTML</item>-->
+<!--        <item>CSS</item>-->
+<!--        <item>JS</item>-->
+<!--        <item>XHR</item>-->
+<!--        <item>Fonts</item>-->
+        <item>Images</item>
+        <item>Media</item>
+<!--        <item>WS</item>-->
+<!--        <item>Other</item>-->
+    </array>
+
+    <string-array name="label_entries">
+        <item>HTML</item>
+        <item>CSS</item>
+        <item>JS</item>
+        <item>XHR</item>
+        <item>Fonts</item>
+        <item>Images</item>
+        <item>Media</item>
+        <item>WS</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="label_values">
+        <item>HTML</item>
+        <item>CSS</item>
+        <item>JS</item>
+        <item>XHR</item>
+        <item>Fonts</item>
+        <item>Images</item>
+        <item>Media</item>
+        <item>WS</item>
+        <item>Other</item>
+    </string-array>
+
+</resources>

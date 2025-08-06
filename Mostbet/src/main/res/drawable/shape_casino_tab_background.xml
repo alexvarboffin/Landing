@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <solid android:color="?colorTabSelectedBackground" />
+            <stroke android:width="1.0dip" android:color="?colorTabSelectedStroke" />
+            <corners android:radius="4.0dip" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="?colorTabUnselectedBackground" />
+            <corners android:radius="4.0dip" />
+        </shape>
+    </item>
+</selector>

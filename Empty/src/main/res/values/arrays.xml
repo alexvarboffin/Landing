@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="navigation_title_list">
+        <item>@string/nav_home</item>
+    </string-array>
+
+<!--    <string-array name="navigation_url_list">-->
+<!--        <item>http://не-готовить.рф/</item>-->
+<!--    </string-array>-->
+
+    <string-array name="navigation_icon_list">
+        <item>@drawable/ic_link</item>
+    </string-array>
+
+</resources>

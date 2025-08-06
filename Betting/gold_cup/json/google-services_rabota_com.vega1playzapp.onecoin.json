@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "319688787948",
+    "firebase_url": "https://rabota-online.firebaseio.com",
+    "project_id": "rabota-online",
+    "storage_bucket": "rabota-online.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:319688787948:android:a14a99e4296e6cbfa862c9",
+        "android_client_info": {
+          "package_name": "com.vega1playzapp.onecoin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "319688787948-o432rm4hh49of35121cr3ktsmsb5ten5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7dynlf-ViZYKk5MRGVmNiWu2VFA0BT7Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "319688787948-o432rm4hh49of35121cr3ktsmsb5ten5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

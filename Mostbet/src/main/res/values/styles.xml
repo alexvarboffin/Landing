@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <style name="Re.AppBarLayout" parent="@style/Widget.Design.AppBarLayout">
+        <item name="android:background">?colorPrimary</item>
+    </style>
+
+    <style name="BalanceView">
+
+    </style>
+
+
+
+
+</resources>

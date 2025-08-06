@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    <color name="colorPrimary">#2F353B</color>-->
+    <!--    <color name="colorPrimaryDark">#2F353B</color>-->
+
+    <!--    <color name="colorPrimary">#FF6410</color>-->
+    <!--    <color name="colorPrimaryDark">#FF6410</color>-->
+
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#C51162</color>
+
+    <!--<color name="colorPrimary">#615195</color>-->
+    <!--<color name="colorPrimaryDark">#50437b</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <!--<color name="colorPrimaryLight">#f5b4afc4</color>-->
+
+    <!--<color name="colorPrimary">#AE1E6A</color>-->
+    <!--<color name="colorPrimaryDark">#AE1E6A</color>-->
+
+    <!--<color name="colorPrimary">#b21e4b</color>-->
+    <!--<color name="colorPrimaryDark">#C0174A</color>-->
+
+    <color name="colorPrimaryLight">#F5C1BECC</color>
+    <!--#0000EE-->
+    <color name="link">#222121</color>
+
+    <color name="color_blue_dark_theme">#ff063260</color>
+    <color name="color_white_32">#51ffffff</color>
+
+    <color name="color_brand_progress_bar">@color/color_orange</color>
+    <color name="color_orange">#fffd4b00</color>
+    <color name="color_black_12">#1e000000</color>
+    <color name="color_black_32">#51000000</color>
+    <color name="color_black_38">#5f000000</color>
+    <color name="color_black_54">#8a000000</color>
+    <color name="color_black_60">#99000000</color>
+    <color name="color_black_67">#ab000000</color>
+    <color name="color_black_87">#de000000</color>
+    <color name="color_black_90">#e6000000</color>
+    <color name="blue">#FF0000FF</color>
+</resources>
+

@@ -1,0 +1,91 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.jetbrains.kotlin.android'
+
+android {
+
+    //com.owa.camhorehacktool
+
+    dataBinding {
+        enabled true
+    }
+
+    compileSdk = libs.versions.android.compileSdk.get().toInt()
+    buildToolsVersion = libs.versions.android.buildTools.get()
+
+    namespace 'com.walhalla.android'
+
+    defaultConfig {
+        applicationId "com.walhalla.android.webview"
+        minSdk = libs.versions.android.minSdk.get().toInt()
+        targetSdkVersion rootProject.targetSdkVersion0
+        versionCode 1
+        versionName "1.0"
+
+        buildConfigField "int", "DEFAULT_THEME", "6"
+        buildConfigField "int", "DEFAULT_DARK_THEME", "11"
+    }
+
+
+    signingConfigs {
+
+        config {
+            keyAlias 'app-extractor'
+            keyPassword '@!sfuQ123zpc'
+            storeFile file('D:/walhalla/keystore.jks')
+            storePassword '@!sfuQ123zpc'
+        }
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            //proguardFiles getDefaultProguardFile('proguard-android.txt'), "proguard-rules.pro"
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            debuggable false
+            jniDebuggable false
+            signingConfig signingConfigs.config
+        }
+//        debug {
+//            // to debug ProGuard rules
+//            multiDexEnabled true
+//            minifyEnabled true
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules-debug.pro'
+//        }
+    }
+    buildFeatures {
+        viewBinding true
+        buildConfig true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation(libs.androidx.appcompat)
+    implementation libs.material
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.yandex.android:mobmetricalib:5.2.0'
+
+    implementation 'com.jraska:console:1.2.0'
+    implementation 'cn.zhaiyifan:rememberedittext:0.9.0'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation 'com.github.acsbendi:Android-Request-Inspector-WebView:1.0.6'
+
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$rootProject.lifecycle_version"
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation "androidx.webkit:webkit:1.10.0"
+    implementation 'androidx.preference:preference:1.2.1'
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    implementation 'androidx.navigation:navigation-fragment:2.7.7'
+    implementation project(':features:webview')
+    implementation project(':features:ui')
+}
+
+static def versionCodeDate() {
+    return new Date().format("yyMMdd").toInteger()
+}

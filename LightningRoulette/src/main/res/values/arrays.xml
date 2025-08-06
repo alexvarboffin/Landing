@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <string-array name="navigation_icon_list">
+<!--        <item>@drawable/ic_home</item>-->
+        <item>@drawable/ic_link</item>
+        <item>@drawable/ic_link</item>
+        <item>@drawable/ic_link</item>
+        <item>@drawable/ic_link</item>
+
+<!--        <item>@drawable/ic_faq</item>-->
+    </string-array>
+
+
+</resources>

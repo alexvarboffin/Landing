@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_blue_dark_theme">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivStars"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:alpha="0.0"
+        android:scaleX="0.0"
+        android:scaleY="0.0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/im_launcher_background"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/logoAnchor"
+        android:layout_width="1.0dip"
+        android:layout_height="1.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/ivStars"
+        app:layout_constraintEnd_toEndOf="@id/ivStars"
+        app:layout_constraintStart_toStartOf="@id/ivStars"
+        app:layout_constraintTop_toTopOf="@id/ivStars" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24.0dip"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_round" />
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/cpiBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:indicatorSize="152.0dip"
+        app:layout_constraintBottom_toTopOf="@id/tvProgress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivLogo"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:trackColor="@color/color_white_32"
+        app:trackThickness="2.0dip" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/cpiProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        app:indicatorColor="@color/color_brand_progress_bar"
+        app:indicatorSize="154.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/cpiBackground"
+        app:layout_constraintEnd_toEndOf="@id/cpiBackground"
+        app:layout_constraintStart_toStartOf="@id/cpiBackground"
+        app:layout_constraintTop_toTopOf="@id/cpiBackground"
+        app:trackCornerRadius="16.0dip"
+        app:trackThickness="4.0dip" />
+    <!--    app:lottie_rawRes="@raw/lottie_splash_loader"-->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lavProgress"
+        android:layout_width="80.0dip"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/cpiBackground"
+        app:layout_constraintEnd_toEndOf="@id/cpiBackground"
+        app:layout_constraintStart_toStartOf="@id/cpiBackground"
+        app:layout_constraintTop_toTopOf="@id/cpiBackground"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="wheel.json"
+        app:lottie_loop="true" />
+
+    <TextView
+        android:id="@+id/tvProgress"
+        style="@style/Re.TextView.Medium"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16.0dip"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginTop="16.0dip"
+        android:layout_marginRight="16.0dip"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="14.0sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cpiBackground" />
+</androidx.constraintlayout.widget.ConstraintLayout>

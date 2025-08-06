@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/aaa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/llc"
+        android:background="#00000000"
+        android:visibility="visible">
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/iv_background"-->
+        <!--            android:layout_width="fill_parent"-->
+        <!--            android:layout_height="fill_parent"-->
+        <!--            android:contentDescription="@null"-->
+        <!--            android:scaleType="centerCrop"-->
+        <!--            android:src="@drawable/abc_bg_generated_day"-->
+        <!--            android:visibility="visible" />-->
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llc"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="#022E7A"
+        android:gravity="center"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/seasons"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Сезоны"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#022E7A" />
+
+        <Button
+            android:id="@+id/clubs"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Клубы"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#022E7A" />
+
+    </LinearLayout>
+</RelativeLayout>

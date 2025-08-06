@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.Launcher" parent="AppTheme.NoActionBar">
+        <item name="android:windowBackground">@android:color/black</item>
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.ContactHeader" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppTheme.Rounded" parent="Widget.AppCompat.ImageButton">
+        <item name="android:background">@drawable/roundcorner</item>
+        <item name="android:layout_marginLeft">8dp</item>
+    </style>
+
+    <!--    <style name="AppTheme.ContactItem">-->
+    <!--        <item name="android:gravity">center</item>-->
+    <!--        <item name="android:background">@drawable/bottom_liner</item>-->
+    <!--        <item name="android:paddingLeft">0dp</item>-->
+    <!--        <item name="android:paddingRight">@dimen/activity_vertical_margin</item>-->
+    <!--    </style>-->
+
+</resources>

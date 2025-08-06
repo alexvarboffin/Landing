@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="launcher_progress_title_second">Все права защищены</string>
+
+    <string name="home">Главная</string>
+    <string name="calculator">Калькулятор</string>
+    <string name="vin">VIN</string>
+    <string name="application">Заявка</string>
+    <string name="contact">Контакты</string>
+
+</resources>

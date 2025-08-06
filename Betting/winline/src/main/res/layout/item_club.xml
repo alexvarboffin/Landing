@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="date" />
+
+    <TextView
+        android:id="@+id/tv_site"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="site" />
+
+    <TextView
+        android:id="@+id/tv_mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="mail" />
+
+    <TextView
+        android:id="@+id/tv_stadium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="stadium" />
+
+    <TextView
+        android:id="@+id/tv_name_club"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="name_club" />
+
+    <TextView
+        android:id="@+id/tv_logo_club"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="logo_club" />
+
+    <TextView
+        android:id="@+id/tv_coach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="coach" />
+
+    <TextView
+        android:id="@+id/tv_URL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="URL" />
+
+    <TextView
+        android:id="@+id/tv_president"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="president" />
+</LinearLayout>

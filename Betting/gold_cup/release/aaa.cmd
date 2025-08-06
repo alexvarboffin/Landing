@@ -1,0 +1,1 @@
+C:\android\sdk\build-tools\29.0.2\aapt.exe d --values strings app-release.apk > strings.log

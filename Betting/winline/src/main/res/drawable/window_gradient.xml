@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android">-->
+<!--&lt;!&ndash;    <item android:drawable="@drawable/window_bg" />&ndash;&gt;-->
+<!--&lt;!&ndash;    <item android:drawable="@drawable/main_bg_one" />&ndash;&gt;-->
+<!--&lt;!&ndash;    <item>&ndash;&gt;-->
+<!--&lt;!&ndash;        <bitmap&ndash;&gt;-->
+<!--&lt;!&ndash;            android:gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:src="@mipmap/ic_launcher_round" />&ndash;&gt;-->
+<!--&lt;!&ndash;    </item>&ndash;&gt;-->
+<!--</layer-list>-->
+<bitmap android:src="@drawable/ic_background"
+    android:tileMode="repeat"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

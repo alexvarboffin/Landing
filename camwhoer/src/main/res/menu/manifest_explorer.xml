@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <item-->
+<!--        android:id="@+id/system_info"-->
+<!--        android:icon="@drawable/ic_details_settings"-->
+<!--        android:title="@string/app_info_drop_target_label"-->
+<!--        app:showAsAction="always" />-->
+
+    <item
+        android:id="@+id/menu_copy_manifest_txt"
+        android:icon="@drawable/ic_content_copy_black_24dp"
+        android:title="@string/menu_popup_copy" />
+
+    <item
+        android:id="@+id/menu_share_text"
+        android:icon="@drawable/ic_baseline_text_snippet_24"
+        android:title="@string/action_share_text"/>
+
+</menu>

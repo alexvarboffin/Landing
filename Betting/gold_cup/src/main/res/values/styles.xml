@@ -1,0 +1,65 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/windowBackground</item>
+    </style>
+
+    <style name="AppTheme.Launcher" parent="AppTheme.NoActionBar">
+        <item name="android:windowBackground">@drawable/window_gradient</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.FullScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="CodeFont" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">#2B2828</item>
+    </style>
+
+    <style name="HeaderGroupText" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="layout_group_content"></style>
+
+    <style name="LabelText" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">#2B2828</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SimpleText" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">#2B2828</item>
+    </style>
+
+    <style name="ButtonText" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppTheme_ButtonSeason2">
+        <item name="android:colorBackground">#FBC900</item>
+        <item name="android:background">#FBC900</item>
+    </style>
+
+    <style name="AppTheme_ButtonSeason">
+<!--        <item name="android:colorBackground">#FB5100</item>-->
+        <item name="android:background">@drawable/border</item>
+    </style>
+
+</resources>

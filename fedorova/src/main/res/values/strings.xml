@@ -1,0 +1,41 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false">1TU.RU Объявления</string>
+    <string name="home_url" translatable="false">https://1tu.ru</string>
+    <string name="play_google_pub" translatable="false">https://1tu.ru</string>
+    <string name="url_privacy_policy" translatable="false">https://volleymos.ru/rules</string>
+    <string name="app_description" translatable="false">© 1TU.RU Объявления, магазины и поиск попутчиков.</string>
+
+
+    <string name="publisher_feedback_email" translatable="false">support@hugosway.com</string>
+    <string name="app_phone" translatable="false">@null</string>
+    <string name="app_email" translatable="false">support@hugosway.com</string>
+    <string name="app_address" translatable="false">Beachmont Business Centre, Suite 65, Kingstown, St. Vincent and the Grenadines</string>
+
+    <string name="app_facebook" translatable="false">https://www.facebook.com/hugoswayofficial</string>
+    <string name="app_twitter" translatable="false">https://twitter.com/hugosway</string>
+    <string name="app_instagram" translatable="false">https://www.instagram.com/hugoswayofficial/</string>
+
+
+
+
+
+
+
+
+
+    <string name="nav_contest">Promotions</string>
+    <string name="nav_advantages">Benefits</string>
+    <string name="nav_trading">Trading</string>
+    <string name="nav_affiliate_program">Affiliate Program</string>
+    <string name="nav_live_spreads">Live Spreads</string>
+    <string name="nav_faq">FAQ</string>
+
+
+
+
+
+
+
+    <string name="nav_promo">{Promo}</string>
+
+</resources>

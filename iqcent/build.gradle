@@ -1,0 +1,133 @@
+apply plugin: 'com.android.application'
+//one_sygnal
+
+//apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+////@@ apply plugin: 'com.google.gms.google-services'
+////@@ apply plugin: 'com.google.firebase.crashlytics'
+
+
+android {
+    compileSdk = libs.versions.android.compileSdk.get().toInt()
+    buildToolsVersion = libs.versions.android.buildTools.get()
+
+    android.defaultConfig.vectorDrawables.setUseSupportLibrary(true)
+
+    def code = versionCodeDate()
+
+    defaultConfig {
+
+        vectorDrawables.useSupportLibrary = true
+
+        applicationId "com.iqcent.pro"
+        minSdk = libs.versions.android.minSdk.get().toInt()
+        targetSdkVersion rootProject.targetSdkVersion0
+        versionCode code
+        versionName "1.1." + code + ".release"
+        setProperty("archivesBaseName", "IQCent")
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+//        manifestPlaceholders = [
+//                onesignal_app_id               : '67248bc7-59d4-483c-a077-e2eba58c76ed',
+//                // Project number pulled from dashboard, local value is ignored.
+//                onesignal_google_project_number: 'REMOTE'
+//        ]
+
+        multiDexEnabled true
+    }
+
+
+    signingConfigs {
+
+
+//        debug {
+//            storeFile file('D:\\android\\keystore\\debug.keystore')
+//            storePassword 'android'
+//            keyAlias = 'androiddebugkey'
+//            keyPassword 'android'
+//        }
+        debug {
+            keyAlias 'release'
+            keyPassword 'release'
+            storeFile file('keystore/kwk_iqcent.jks')
+            storePassword 'release'
+        }
+        release {
+            keyAlias 'release'
+            keyPassword 'release'
+            storeFile file('keystore/kwk_iqcent.jks')
+            storePassword 'release'
+        }
+
+//        a19laz {
+//            keyAlias 'release'
+//            keyPassword 'release'
+//            storeFile file('keystore/keystore.jks')
+//            storePassword 'release'
+//        }
+    }
+
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+        }
+        release {
+            minifyEnabled true
+            shrinkResources false
+            //proguardFiles getDefaultProguardFile('proguard-android.txt'), "proguard-rules.pro"
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            //debuggable false
+            //jniDebuggable false
+            signingConfig signingConfigs.release
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    namespace 'com.iqcent.pro'
+
+//    flavorDimensions 'W'
+//    productFlavors {
+//        iqcent {
+//            dimension = 'W'
+//            applicationId = 'com.iqcent.pro'
+//        }
+//    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.google.firebase:firebase-messaging:23.3.1'
+    //Firebase Crashlytics
+//    implementation "com.google.firebase:firebase-crashlytics:$rootProject.crashlyticsVersion"
+//    implementation "com.google.firebase:firebase-analytics:$rootProject.analyticsVersion"
+
+
+    implementation(libs.androidx.appcompat)
+    implementation libs.material
+
+    implementation libs.androidx.swiperefreshlayout
+//    implementation('com.google.android.gms:play-services-ads:17.2.0') {
+//        exclude group: 'com.android.support'
+//    }
+
+    implementation project(path: ':features:ui')
+    implementation project(path: ':features:landing')
+
+    //One Signal
+    //-implementation 'com.onesignal:OneSignal:[4.0.0, 4.99.99]'
+    //implementation 'com.google.android.gms:play-services-location:16.0.99'
+    //implementation 'com.google.firebase:firebase-messaging:17.3.99'
+    //implementation 'com.google.android.gms:play-services-ads-identifier:16.0.99'
+    //implementation 'com.google.android.gms:play-services-base:16.1.99'
+    implementation libs.androidx.multidex
+
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$rootProject.lifecycle_version"
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$rootProject.kotlin_version"
+}
+

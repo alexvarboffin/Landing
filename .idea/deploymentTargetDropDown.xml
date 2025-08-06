@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="deploymentTargetDropDown">
+    <value>
+      <entry key="BetAps">
+        <State />
+      </entry>
+      <entry key="Betting.gold_cup">
+        <State />
+      </entry>
+      <entry key="Betting.winline">
+        <State />
+      </entry>
+      <entry key="Dashboard">
+        <State />
+      </entry>
+      <entry key="Ketodieto">
+        <State />
+      </entry>
+      <entry key="LightningRoulette">
+        <State>
+          <targetSelectedWithDropDown>
+            <Target>
+              <type value="QUICK_BOOT_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="C:\Users\combo\.android\avd\Pixel_7_Pro_API_34.avd" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </targetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-02-12T10:30:25.442095600Z" />
+        </State>
+      </entry>
+      <entry key="Mostbet">
+        <State />
+      </entry>
+      <entry key="Nocook">
+        <State />
+      </entry>
+      <entry key="Prm4u">
+        <State />
+      </entry>
+      <entry key="Royspins">
+        <State />
+      </entry>
+      <entry key="S1">
+        <State />
+      </entry>
+      <entry key="Simple">
+        <State />
+      </entry>
+      <entry key="T_Simple.BetAps">
+        <State />
+      </entry>
+      <entry key="T_Simple.slotmachinesonline24">
+        <State />
+      </entry>
+      <entry key="VavMob">
+        <State />
+      </entry>
+      <entry key="Zerocard">
+        <State>
+          <targetSelectedWithDropDown>
+            <Target>
+              <type value="QUICK_BOOT_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="C:\Users\combo\.android\avd\Pixel_7_API_24.avd" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </targetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-01-04T10:09:29.548992300Z" />
+        </State>
+      </entry>
+      <entry key="autodolgi">
+        <State />
+      </entry>
+      <entry key="c0">
+        <State />
+      </entry>
+      <entry key="camwhoer">
+        <State />
+      </entry>
+      <entry key="chatgpt">
+        <State />
+      </entry>
+      <entry key="chezap">
+        <State />
+      </entry>
+      <entry key="cryptotracker">
+        <State>
+          <targetSelectedWithDropDown>
+            <Target>
+              <type value="QUICK_BOOT_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="C:\Users\combo\.android\avd\Pixel_7_Pro_API_34.avd" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </targetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-01-04T11:41:55.968208700Z" />
+        </State>
+      </entry>
+      <entry key="fedorova">
+        <State />
+      </entry>
+      <entry key="freebetbookmakers">
+        <State />
+      </entry>
+      <entry key="j0bar">
+        <State>
+          <targetSelectedWithDropDown>
+            <Target>
+              <type value="QUICK_BOOT_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="C:\Users\combo\.android\avd\Pixel_7_Pro_API_34.avd" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </targetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-02-07T08:08:04.918804700Z" />
+        </State>
+      </entry>
+      <entry key="microchecker">
+        <State />
+      </entry>
+      <entry key="mostbetru">
+        <State />
+      </entry>
+      <entry key="skladchina">
+        <State />
+      </entry>
+      <entry key="slotmachinesonline24">
+        <State />
+      </entry>
+    </value>
+  </component>
+</project>

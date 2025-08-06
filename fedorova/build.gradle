@@ -1,0 +1,126 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+apply plugin: 'org.jetbrains.kotlin.android'
+
+buildscript {
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/' }
+    }
+    dependencies {
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:0.14.0'
+    }
+}
+
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+
+////@@ apply plugin: 'com.google.gms.google-services'
+////@@ apply plugin: 'com.google.firebase.crashlytics'
+
+
+android {
+    compileSdk = libs.versions.android.compileSdk.get().toInt()
+    buildToolsVersion = libs.versions.android.buildTools.get()
+
+    android.defaultConfig.vectorDrawables.setUseSupportLibrary(true)
+
+    def code = versionCodeDate()
+
+    defaultConfig {
+
+        //buildConfigField "String", "ONESIGNAL_APP_ID", "\"${ONESIGNAL_APP_ID}\""
+
+        vectorDrawables.useSupportLibrary = true
+        applicationId "hugosway.forex" //++++
+        minSdk = libs.versions.android.minSdk.get().toInt()
+        targetSdkVersion rootProject.targetSdkVersion0
+        versionCode code
+        versionName "1.1." + code + ".release"
+        setProperty("archivesBaseName", "HugoswayForex_" + code)
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+//        if (!isEmpty(ONESIGNAL_APP_ID)) {
+//            manifestPlaceholders = [
+//                    onesignal_app_id               : "\"${ONESIGNAL_APP_ID}\"",
+//                    // Project number pulled from dashboard, local value is ignored.
+//                    onesignal_google_project_number: 'REMOTE'//734593759786
+//            ]
+//        }
+
+    }
+
+
+    signingConfigs {
+
+        debug {
+            keyAlias 'release'
+            keyPassword 'release'
+            storeFile file('keystore/fedorova_a19laz_key.jks')
+            storePassword 'release'
+        }
+        release {
+            keyAlias 'release'
+            keyPassword 'release'
+            storeFile file('keystore/fedorova_a19laz_key.jks')
+            storePassword 'release'
+        }
+    }
+
+
+    buildTypes {
+
+        debug {
+            signingConfig signingConfigs.debug
+        }
+        release {
+            minifyEnabled true
+            shrinkResources false
+            //proguardFiles getDefaultProguardFile('proguard-android.txt'), "proguard-rules.pro"
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            //debuggable false
+            //jniDebuggable false
+            signingConfig signingConfigs.release
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    namespace 'hugosway.forex'
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation(libs.androidx.appcompat)
+    implementation libs.material
+    implementation 'com.google.firebase:firebase-messaging:23.3.1'
+
+    //Firebase Crashlytics
+    //implementation "com.google.firebase:firebase-crashlytics:$rootProject.crashlyticsVersion"
+    implementation "com.google.firebase:firebase-analytics:$rootProject.analyticsVersion"
+
+
+
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+//    implementation('com.google.android.gms:play-services-ads:17.2.0') {
+//        exclude group: 'com.android.support'
+//    }
+    implementation project(path: ':features:ui')
+    implementation project(path: ':features:landing')
+
+    //One Signal
+//    if (isEmpty(ONESIGNAL_APP_ID)) {
+//        implementation project(':stub_onesignal')
+//    } else {
+//        implementation 'com.onesignal:OneSignal:4.7.2'
+//    }
+    //implementation 'com.google.android.gms:play-services-location:16.0.99'
+    //implementation 'com.google.firebase:firebase-messaging:17.3.99'
+    //implementation 'com.google.android.gms:play-services-ads-identifier:16.0.99'
+    //implementation 'com.google.android.gms:play-services-base:16.1.99'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$rootProject.lifecycle_version"
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$rootProject.kotlin_version"
+}
+

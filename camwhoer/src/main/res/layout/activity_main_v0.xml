@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<!--    android:fitsSystemWindows="true"-->
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+<!--        <com.google.android.material.appbar.AppBarLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:theme="@style/AppTheme.AppBarOverlay">-->
+
+<!--            <androidx.appcompat.widget.Toolbar-->
+<!--                android:id="@+id/toolbar"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="?attr/actionBarSize"-->
+<!--                android:background="?attr/colorPrimary"-->
+<!--                app:popupTheme="@style/AppTheme.PopupOverlay">-->
+
+<!--&lt;!&ndash;                <com.google.android.material.tabs.TabLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/tabs"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    app:tabGravity="fill"&ndash;&gt;-->
+<!--&lt;!&ndash;                    app:tabIndicatorColor="#DD2C00"&ndash;&gt;-->
+<!--&lt;!&ndash;                    app:tabIndicatorHeight="4dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    app:tabMaxWidth="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    app:tabMode="fixed">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    &lt;!&ndash;<android.support.design.widget.TabItem&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                    &lt;!&ndash;android:id="@+id/tabItem"&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                    &lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                    &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                    &lt;!&ndash;android:text="@string/tab_text_1" />&ndash;&gt;&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    &lt;!&ndash;<android.support.design.widget.TabItem&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                    &lt;!&ndash;android:id="@+id/tabItem2"&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                    &lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                    &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                    &lt;!&ndash;android:text="@string/tab_text_2" />&ndash;&gt;&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    &lt;!&ndash;<android.support.design.widget.TabItem&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                    &lt;!&ndash;android:id="@+id/tabItem3"&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                    &lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                    &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                    &lt;!&ndash;android:tag="@string/tab_text_3"&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                    &lt;!&ndash;android:text="@string/tab_text_3" />&ndash;&gt;&ndash;&gt;-->
+
+<!--&lt;!&ndash;                </com.google.android.material.tabs.TabLayout>&ndash;&gt;-->
+
+<!--            </androidx.appcompat.widget.Toolbar>-->
+<!--        </com.google.android.material.appbar.AppBarLayout>-->
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPager2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/bottomnav_main" />
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomnav_main"
+                style="@style/SAIBottomNavigationView"
+                android:layout_alignParentBottom="true"
+                app:menu="@menu/bottom_navigation" />
+        </RelativeLayout>
+
+        <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="end|bottom"-->
+        <!--android:layout_margin="@dimen/fab_margin"-->
+        <!--app:srcCompat="@android:drawable/ic_dialog_email" />-->
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

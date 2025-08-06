@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1001692937813",
+    "project_id": "kwkadvear",
+    "storage_bucket": "kwkadvear.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001692937813:android:37b2f72433d386303e5edc",
+        "android_client_info": {
+          "package_name": "com.advear.client"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrysBWPzbaS0ncPMa5pW_uTFPpve1tt9g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

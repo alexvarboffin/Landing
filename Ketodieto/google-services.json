@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "484850418760",
+    "project_id": "kwkketodieto",
+    "storage_bucket": "kwkketodieto.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:484850418760:android:08c442d76184b1f727847d",
+        "android_client_info": {
+          "package_name": "com.ketodieto.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEvRRmbNyReImxe7c7CYOD7fibGHAY7Yo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

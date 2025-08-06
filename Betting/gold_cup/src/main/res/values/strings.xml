@@ -1,0 +1,45 @@
+<resources>
+
+    <string name="app_name" translatable="false">Winline | спорт Винлайн</string>
+<!--    <string name="app_name" translatable="false">Золотой кубок Украина</string>-->
+    <!--    <string name="app_name" translatable="false">Кубок Украины по футболу</string>-->
+
+
+    <string name="default_notification_channel_name" translatable="false">FootballDeluxe</string>
+    <string name="default_notification_channel_id" translatable="false">70</string>
+
+    <!--    <string name="facebook_app_id" translatable="false">962865430825449</string>-->
+
+    <!--Deep link format-->
+    <string name="app_scheme" translatable="false">app</string>
+    <string name="app_host" translatable="false">footballquiz</string>
+    <string name="game_over">Game Over!</string>
+
+    <string name="publisher_feedback_email" translatable="false">footballquiz@gmail.com</string>
+    <string name="play_google_pub" translatable="false">FootballDeluxe</string>
+
+    <string name="a2010" translatable="false">2010</string>
+<!--    ...-->
+    <string name="a2021" translatable="false">2021</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <string name="header01">Узнайте больше о футболе с помощью Золотого кубка
+        \nДля подробной информации выберите год</string>
+
+
+    <string name="date" translatable="false">Дата основания:</string>
+    <string name="site" translatable="false">Сайт:</string>
+    <string name="mail" translatable="false">e-mail:</string>
+    <string name="stadium" translatable="false">Стадион: </string>
+    <string name="name_club" translatable="false">Клуб:</string>
+
+
+    <string name="coach">Тренер: </string>
+    <string name="total_win">total_win</string>
+    <string name="url">Сайт</string>
+    <string name="president">Президент:</string>
+    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>
+
+
+</resources>

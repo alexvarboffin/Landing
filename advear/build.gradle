@@ -1,0 +1,124 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.jetbrains.kotlin.android'
+
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+
+
+android {
+
+    compileSdk = libs.versions.android.compileSdk.get().toInt()
+    buildToolsVersion = libs.versions.android.buildTools.get()
+
+    namespace 'com.advear.client'
+
+    android.defaultConfig.vectorDrawables.setUseSupportLibrary(true)
+
+    def code = versionCodeDate()
+
+    defaultConfig {
+
+        vectorDrawables.useSupportLibrary = true
+        applicationId "com.advear.client"
+        minSdk = libs.versions.android.minSdk.get().toInt()
+        targetSdkVersion rootProject.targetSdkVersion0
+        versionCode code
+        versionName "1.2." + code
+        setProperty("archivesBaseName", "com.advear.client" + code)
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+
+        manifestPlaceholders = [
+                onesignal_app_id               : 'c6bb713f-0da2-4e96-9632-0a81b1103d19',
+                // Project number pulled from dashboard, local value is ignored.
+                onesignal_google_project_number: 'REMOTE'//734593759786
+        ]
+    }
+
+
+    signingConfigs {
+
+        key0 {
+            keyAlias 'release'
+            keyPassword 'release'
+            storeFile file('keystore\\keystore.jks')
+            storePassword 'release'
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.key0
+            versionNameSuffix "-DEMO"
+        }
+        release {
+            minifyEnabled false
+            shrinkResources false
+            //proguardFiles getDefaultProguardFile('proguard-android.txt'), "proguard-rules.pro"
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            //debuggable false
+            //jniDebuggable false
+            signingConfig signingConfigs.key0
+            versionNameSuffix ".release"
+        }
+    }
+    buildFeatures {
+        viewBinding true
+        buildConfig true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation(libs.androidx.appcompat)
+    implementation libs.material
+    implementation libs.firebase.messaging
+
+    //Firebase Crashlytics
+//    implementation "com.google.firebase:firebase-crashlytics:$rootProject.crashlyticsVersion"
+//    implementation "com.google.firebase:firebase-analytics:$rootProject.analyticsVersion"
+
+    //Optional
+    //implementation "com.google.firebase:firebase-database:$rootProject.firebaseDatabase"
+    //implementation 'com.google.firebase:firebase-messaging:23.3.0'
+
+
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+//    implementation('com.google.android.gms:play-services-ads:17.2.0') {
+//        exclude group: 'com.android.support'
+//    }
+    implementation project(path: ':features:ui')
+    implementation project(path: ':features:landing')
+    //implementation project(path: ':corelib')
+    //implementation project(':stubInjector')
+
+    //implementation 'com.google.android.gms:play-services-location:16.0.99'
+    //implementation 'com.google.firebase:firebase-messaging:17.3.99'
+    //implementation 'com.google.android.gms:play-services-ads-identifier:16.0.99'
+    //implementation 'com.google.android.gms:play-services-base:16.1.99'
+    implementation libs.androidx.multidex
+
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$rootProject.lifecycle_version"
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    //implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.22"//kotlin plugin version-> 1.7.1
+    implementation libs.gson
+    //Firebase Crashlytics
+    implementation "com.google.firebase:firebase-crashlytics:$rootProject.crashlyticsVersion"
+    implementation "com.google.firebase:firebase-analytics:$rootProject.analyticsVersion"
+    //features
+    //implementation 'com.appsflyer:af-android-sdk:6.12.1'
+    implementation(libs.pulsator4droid)
+    implementation libs.androidx.core.splashscreen
+    implementation "com.onesignal:OneSignal:$rootProject.OneSignal"
+
+    implementation 'org.nanohttpd:nanohttpd:2.3.1'
+    implementation("com.squareup.okhttp3:okhttp:$rootProject.okHttpVersion")
+
+    implementation 'com.github.franmontiel:PersistentCookieJar:v1.0.1'
+}
+

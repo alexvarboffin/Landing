@@ -1,0 +1,18 @@
+<resources>
+
+
+    <string name="app_name" translatable="false">Lightning Roulette</string>
+    <string name="app_name_splash" translatable="false">Lightning Roulette</string>
+
+
+    <string name="play_google_pub" translatable="false">Lightning Roulette</string>
+<!--    <string name="url_privacy_policy" translatable="false">https://iqcent.com/en/terms</string>-->
+
+
+    <string name="launcher_progress_title_last">Done</string>
+    <string name="launcher_progress_title_sixth">Checking payment systems</string>
+    <string name="launcher_progress_title_first">Real time predictor!</string>
+    <string name="launcher_progress_title_second">Made by: winspin.bet</string>
+    <string name="app_description" />
+
+</resources>

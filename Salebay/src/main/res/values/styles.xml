@@ -1,0 +1,99 @@
+<resources>
+    <!-- Base application theme. -->
+    <!--    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+    <!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+    <!--        <item name="colorPrimary">@color/colorPrimary</item>-->
+    <!--        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+    <!--        <item name="colorAccent">@color/colorAccent</item>-->
+    <!--    </style>-->
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Тема для светлой темы -->
+    <style name="AppThemeLight" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--        <item name="android:windowBackground">@color/background_color_light</item>-->
+        <!--        <item name="android:textColor">@color/text_color_light</item>-->
+    </style>
+
+    <!-- Тема для темной темы -->
+    <style name="AppThemeDark" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--        <item name="android:windowBackground">@color/background_color_dark</item>-->
+        <!--        <item name="android:textColor">@color/text_color_dark</item>-->
+    </style>
+
+    <style name="AppTheme.LauncherLight" parent="AppThemeLight">
+        <item name="android:windowBackground">@android:color/black</item>
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="AppTheme.LauncherDark" parent="AppThemeDark">
+        <item name="android:windowBackground">@android:color/black</item>
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.ContactHeader" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppTheme.ContactItem">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bottom_liner</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">@dimen/activity_vertical_margin</item>
+    </style>
+
+    <style name="Re.TextView" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/color_black_87</item>
+        <item name="android:textColorHint">@color/color_black_38</item>
+        <item name="android:fontFamily">?fontFamilyRegular</item>
+    </style>
+
+    <style name="Re.TextView.Medium" parent="@style/Re.TextView">
+        <item name="android:fontFamily">?fontFamilyMedium</item>
+    </style>
+
+    <style name="WVErrotScreenTitle" parent="Widget.AppCompat.TextView">
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="MaterialProgressBar" parent="Widget.MaterialComponents.LinearProgressIndicator">
+        <!--        <item name="android:layout_marginTop">40dp</item>-->
+        <!--        <item name="android:padding">30dp</item>-->
+        <!--        <item name="android:background">#C51162</item>-->
+        <item name="indicatorColor">@color/colorAccent</item>
+    </style>
+
+</resources>

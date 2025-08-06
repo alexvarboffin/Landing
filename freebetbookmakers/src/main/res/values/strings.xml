@@ -1,0 +1,45 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--<string name="app_name" translatable="false">guidesgame</string>-->
+    <string name="app_name" translatable="false">Фрибеты - Бесплатные Ставки</string>
+    <string name="app_name_splash" translatable="false">Фрибеты - Бесплатные Ставки</string>
+
+    <string name="play_google_pub" translatable="false">Фрибеты - Бесплатные Ставки</string>
+    <string name="url_privacy_policy" translatable="false">mobile.yoshop.tj/privacy.pdf</string>
+    <string name="url_privacy_rules" translatable="false">mobile.yoshop.tj/rules.pdf</string>
+
+
+    <string name="publisher_feedback_email" translatable="false">support@Фрибеты - Бесплатные Ставки.net</string>
+
+
+    <string name="app_description" translatable="false">
+*This website provides services and information on this site...
+    </string>
+
+
+    <!--    <string name="nav_contest">Promotions</string>-->
+    <!--    <string name="nav_advantages">Benefits</string>-->
+    <!--    <string name="nav_trading">Trading</string>-->
+    <!--    <string name="nav_affiliate_program">Affiliate Program</string>-->
+    <!--    <string name="nav_live_spreads">Live Spreads</string>-->
+    <!--    <string name="nav_faq">FAQ</string>-->
+
+
+
+
+
+    <string name="nav_promo">{Promo}</string>
+
+
+
+    <string name="action_share">Поделиться</string>
+    <string name="ok">ОК</string>
+
+    <string name="launcher_progress_title_first">© %1$d,  Фрибеты, Бонусы,\nПромокоды Букмекерских контор.</string>
+
+    <string name="launcher_progress_title_second">All rights reserved</string>
+
+
+
+<!--    Вся информация представленная в приложении, касающаяся обзоров букмекеров, его функциональности, носит информационный характер, и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 (2) Гражданского кодекса РФ. Вход 18+ Copyright © 2024 Фрибеты, Бонусы, Промокоды Букмекерских контор.-->
+</resources>

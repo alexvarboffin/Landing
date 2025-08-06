@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="navigation_title_list">
+        <item>@string/nav_home</item>
+<!--        <item>@string/nav_trading</item>-->
+<!--        <item>@string/nav_affiliate_program</item>-->
+<!--        <item>@string/nav_live_spreads</item>-->
+<!--        <item>@string/nav_faq</item>-->
+    </string-array>
+
+    <string-array name="navigation_url_list">
+        <item>https://royspins.org?faff=276</item>
+    </string-array>
+
+    <string-array name="navigation_icon_list">
+<!--        <item>@drawable/ic_home</item>-->
+        <item>@drawable/ic_link</item>
+<!--        <item>@drawable/ic_link</item>-->
+<!--        <item>@drawable/ic_link</item>-->
+<!--        <item>@drawable/ic_link</item>-->
+<!--        <item>@drawable/ic_link</item>-->
+<!--        <item>@drawable/ic_faq</item>-->
+    </string-array>
+</resources>

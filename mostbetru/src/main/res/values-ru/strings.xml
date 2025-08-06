@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+    <string name="action_share">Поделиться</string>
+    <string name="ok">ОК</string>
+
+
+
+
+</resources>

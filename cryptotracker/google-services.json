@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "41033616037",
+    "project_id": "kwklandingcryptotracker",
+    "storage_bucket": "kwklandingcryptotracker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41033616037:android:e8c1feb398f3615091db4c",
+        "android_client_info": {
+          "package_name": "com.m4u.cryptotracker.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2kFp-8waWeFSAvCbgBedhr7W1jscKoIM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

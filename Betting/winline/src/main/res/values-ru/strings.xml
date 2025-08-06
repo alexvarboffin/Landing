@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="game_over">Игра Завершена!</string>
+    <string name="header01">Узнайте больше о футболе с помощью Золотого кубка
+        \nДля подробной информации выберите год</string>
+
+    <string name="coach">Тренер: </string>
+    <string name="total_win">total_win</string>
+    <string name="url">Сайт</string>
+    <string name="president">Президент:</string>
+</resources>

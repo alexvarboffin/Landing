@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "804034762259",
+    "project_id": "landingiqcent",
+    "storage_bucket": "landingiqcent.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:804034762259:android:86b60fd96ee911e3b051e6",
+        "android_client_info": {
+          "package_name": "com.iqcent.client"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "804034762259-oht57ovdqiqvsi2ehp1epb19d2a8ll43.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA20wTEGc-PmN1T--vZOBkM9Lry3_4q6UA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "804034762259-oht57ovdqiqvsi2ehp1epb19d2a8ll43.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:804034762259:android:819fb87f2953c603b051e6",
+        "android_client_info": {
+          "package_name": "com.iqcent.pro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "804034762259-oht57ovdqiqvsi2ehp1epb19d2a8ll43.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA20wTEGc-PmN1T--vZOBkM9Lry3_4q6UA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "804034762259-oht57ovdqiqvsi2ehp1epb19d2a8ll43.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

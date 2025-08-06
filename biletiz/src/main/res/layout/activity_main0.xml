@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg">
+
+    <WebView
+        android:id="@id/webView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0.0dip"
+        android:layout_marginTop="0.0dip" />
+
+<!--    <Button-->
+<!--        android:id="@+id/button"-->
+<!--        style="@style/Widget.AppCompat.Button"-->
+<!--        android:layout_width="215.0dip"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="320.0dip"-->
+<!--        android:background="@drawable/btn_rounded"-->
+<!--        android:text="@string/wv_reload_page"-->
+<!--        android:visibility="visible" />-->
+
+    <ImageView
+        android:id="@id/imageView"
+        android:layout_width="300.0dip"
+        android:layout_height="250.0dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50.0dip"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="350.0dip"
+        android:layout_height="88.0dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="237.0dip"
+        android:gravity="center"
+        android:text="Загрузка..."
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24.0sp"
+        android:textStyle="bold" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/bg"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="fill_parent"-->
+<!--        android:background="#fff1f2f3"-->
+<!--        app:srcCompat="@drawable/bg" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/progressBar2"-->
+<!--        android:layout_width="100.0dip"-->
+<!--        android:layout_height="100.0dip"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:visibility="invisible"-->
+<!--        app:srcCompat="@drawable/loading" />-->
+</RelativeLayout>

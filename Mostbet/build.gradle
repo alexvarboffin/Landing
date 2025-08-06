@@ -1,0 +1,83 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.jetbrains.kotlin.android'
+
+
+android {
+    compileSdk = libs.versions.android.compileSdk.get().toInt()
+    buildToolsVersion = libs.versions.android.buildTools.get()
+
+    namespace 'ai'
+
+
+    //android.defaultConfig.vectorDrawables.setUseSupportLibrary(true)
+
+    def code = versionCodeDate()
+
+    defaultConfig {
+
+        resConfigs "sw", "en"
+        vectorDrawables.useSupportLibrary = true
+        applicationId "com.a.betpawa"
+
+        minSdk = libs.versions.android.minSdk.get().toInt()
+        targetSdkVersion rootProject.targetSdkVersion0
+        versionCode code
+        versionName "1.1." + code + ".release"
+        setProperty("archivesBaseName", "a")
+        //multiDexEnabled true
+    }
+
+
+    signingConfigs {
+
+        debug {
+            keyAlias 'release'
+            keyPassword 'release'
+            storeFile file('keystore/keystore.jks')
+            storePassword 'release'
+        }
+        release {
+            keyAlias 'release'
+            keyPassword 'release'
+            storeFile file('keystore/keystore.jks')
+            storePassword 'release'
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+        }
+        release {
+            minifyEnabled true
+            shrinkResources true
+            //proguardFiles getDefaultProguardFile('proguard-android.txt'), "proguard-rules.pro"
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            //debuggable false
+            //jniDebuggable false
+            signingConfig signingConfigs.release
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation(libs.androidx.appcompat)
+    implementation libs.material
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+
+    implementation project(path: ':features:landing')
+    implementation project(path: ':features:ui')
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+//    com.appsflyer
+//    com\bumptech\glide
+    implementation 'com.airbnb.android:lottie:6.1.0'
+    implementation 'com.github.Piashsarker:AndroidAppUpdateLibrary:1.0.4'
+    implementation "com.robinhood.ticker:ticker:2.0.4"
+    implementation "com.github.skydoves:balloon:1.6.3"
+}

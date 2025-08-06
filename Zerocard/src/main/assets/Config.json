@@ -1,0 +1,7 @@
+{
+  "splash_screen_enabled": true,
+  "toolbar_enabled": false,
+  "check_connection": true,
+  "progress_enabled": true,
+  "swipe_enabled": true
+}

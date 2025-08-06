@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--<string name="app_name" translatable="false">guidesgame</string>-->
+    <string name="app_name" translatable="false">ADVEAR</string>
+    <string name="app_name_splash" translatable="false">ADVEAR</string>
+
+    <string name="play_google_pub" translatable="false">ADVEAR</string>
+    <string name="url_privacy_policy" translatable="false">privacy.pdf</string>
+    <string name="url_privacy_rules" translatable="false">rules.pdf</string>
+
+
+    <string name="publisher_feedback_email" translatable="false">support@advear.net</string>
+
+
+    <string name="app_description" translatable="false">
+*This website provides services and information on this site...
+    </string>
+
+
+    <string name="nav_promo">{Promo}</string>
+
+
+    <string name="action_share">Поделиться</string>
+    <string name="ok">ОК</string>
+
+
+    <string name="launcher_progress_title_first" translatable="false">© %1$d, ADVEAR.</string>
+    <string name="launcher_progress_title_second">All rights reserved</string>
+
+
+    <string name="share_text_default">Привет, мой друг, посмотри это приложение.\n
+    ADVEAR - Биржа микрозадач, визитов, социального продвижения.</string>
+
+    <!--    Вся информация представленная в приложении, касающаяся обзоров букмекеров, его функциональности, носит информационный характер, и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 (2) Гражданского кодекса РФ. Вход 18+ Copyright © 2024 Фрибеты, Бонусы, Промокоды Букмекерских контор.-->
+</resources>

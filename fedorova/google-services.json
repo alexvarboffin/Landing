@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "696025939506",
+    "firebase_url": "https://landing-c7d7f.firebaseio.com",
+    "project_id": "landing-c7d7f",
+    "storage_bucket": "landing-c7d7f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696025939506:android:d927bd2d28deb71c",
+        "android_client_info": {
+          "package_name": "com.iqcent.client"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "696025939506-akf6nd842l00ujuujq7nj4tvfa26jr1j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iqcent.client",
+            "certificate_hash": "7dbc530d2cc4a259ded174c8a8e677bfa4d87bce"
+          }
+        },
+        {
+          "client_id": "696025939506-4civpfl6995mq2nrrnm0lqc9der4krco.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAURgSajkqg1GzUetDWzRqPaOcuN40Nnko"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "696025939506-4civpfl6995mq2nrrnm0lqc9der4krco.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

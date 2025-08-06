@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="navigation_title_list">
+        <item>@string/nav_home</item>
+        <item>@string/nav_contest</item>
+        <item>@string/nav_advantages</item>
+        <item>@string/nav_faq</item>
+    </string-array>
+
+    <string-array name="navigation_url_list">
+        <item>https://iqcent.com</item>
+        <item>https://iqcent.com/en/contest</item>
+        <item>https://iqcent.com/en/advantages</item>
+
+        <item>https://iqcent.com/en/faq</item>
+    </string-array>
+
+    <string-array name="navigation_icon_list">
+<!--        <item>@drawable/ic_home</item>-->
+        <item>@drawable/ic_link</item>
+        <item>@drawable/ic_link</item>
+        <item>@drawable/ic_link</item>
+        <item>@drawable/ic_link</item>
+
+<!--        <item>@drawable/ic_faq</item>-->
+    </string-array>
+
+
+</resources>

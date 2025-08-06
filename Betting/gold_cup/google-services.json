@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "582763464724",
+    "firebase_url": "https://kwk-betting-default-rtdb.firebaseio.com",
+    "project_id": "kwk-betting",
+    "storage_bucket": "kwk-betting.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582763464724:android:7e221bdde9ed2e70657f01",
+        "android_client_info": {
+          "package_name": "com.example.jack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582763464724-jsf4hp0j9homfj2aorgnanu3ofggu743.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAI7wAH40Cy_t1CImSvZM_WZuKdsKCHjeY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582763464724-jsf4hp0j9homfj2aorgnanu3ofggu743.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582763464724:android:a70ed04a1dc1d815657f01",
+        "android_client_info": {
+          "package_name": "com.sport.matches.winline.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582763464724-t5divq7daf0rnokjnhncls2spc1541hi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sport.matches.winline.app",
+            "certificate_hash": "0bd12e8756714c1bf105e6bb82a0223e03f86524"
+          }
+        },
+        {
+          "client_id": "582763464724-jsf4hp0j9homfj2aorgnanu3ofggu743.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAI7wAH40Cy_t1CImSvZM_WZuKdsKCHjeY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582763464724-jsf4hp0j9homfj2aorgnanu3ofggu743.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="navigation_title_list">
+        <!--        <item>https://www.flirt4free.com</item>-->
+
+        <!--        <item>aa</item>-->
+        <item>http://www.http2demo.io/</item>
+        <item>img</item>
+        <item>img-http</item>
+        <item>local-http</item>
+
+        <item>https://kwork.ru/seller</item>
+
+        <item>https://freelancehunt.com</item>
+
+        <item>https://pbtest.org</item>
+        <item>Panopticlick</item>
+        <item>browserleaks.com</item>
+        <item>my+user+agent</item>
+
+        <item>YOUTUBE</item>
+        <item>ChatGPT - OpenAI</item>
+        <item>ArtVK</item>
+        <item>CODELIST</item>
+        <item>CODECANYON</item>
+        <item>Сhatgptproto.blogspot.com</item>
+
+        <item>Android Source Code</item>
+        <item>Android Tutorial</item>
+        <item>Translate.Google.com</item>
+        <item>BAIDU</item>
+
+        <item>https://hackyourmom.com</item>
+        <item>https://spaces.im</item>
+        <item>https://s4.piratebuhta.info</item>
+
+        <item>https://chaturbate.com/trans-cams/</item>
+        <item>https://ukr.bongacams.com/</item>
+        <item>https://ru.stripchat.com/girls/russian</item>
+        <item>climax.delivery</item>
+        <item>https://codeby.net/</item>
+        <item>https://xss.is</item>
+        <item>https://cqr.company</item>
+
+        <item>https://github.com/alexvarboffin</item>
+        <item>https://pixelscan.net</item>
+
+        <item>https://www.guerrillamail.com</item>
+        <item>https://temp-mail.org</item>
+        <item>https://10minutemail.net</item>
+        <item>https://10minutemail.one</item>
+        <item>https://tempmail.io</item>
+
+
+    </string-array>
+
+
+    <string-array name="navigation_url_list">
+
+        <!--        <item>https://qepenuh.com/f-lz5u2-i70-gts-dojl-b308.class?subid_1=462966&amp;ubid_2=2805810&amp;ubid_4=1&amp;subid_7=cnj71cfqle3c73bch6r0</item>-->
+
+
+        <!--        <item>https://www.flirt4free.com</item>-->
+
+        <item>http://www.http2demo.io/</item>
+        <item>https://lh4.googleusercontent.com/-LLKrWt4w0zc/AAAAAAAAAAI/AAAAAAAABso/tGn3mbiPRq4/photo.jpg</item>
+        <item>http://1153288396.rsc.cdn77.org/http2/tiles_final/tile_138.png</item>
+        <item>http://localhost:1234/?encode=https%3A%2F%2Flh4.googleusercontent.com%2F-LLKrWt4w0zc%2FAAAAAAAAAAI%2FAAAAAAAABso%2FtGn3mbiPRq4%2Fphoto.jpg</item>
+
+
+        <item>https://kwork.ru/seller</item>
+        <item>https://freelancehunt.com</item>
+
+
+        <item>https://pbtest.org</item>
+        <item>https://coveryourtracks.eff.org</item>
+        <item>https://browserleaks.com/</item>
+        <item>https://www.google.com/search?q=my+user+agent</item>
+
+        <item>https://m.youtube.com</item>
+        <item>https://chat.openai.com/</item>
+        <item>https://artvk.blogspot.com</item>
+        <item>https://codelist.cc/index.php?do=search</item>
+        <item>https://codecanyon.net/category/mobile/android</item>
+        <item>https://chatgptproto.blogspot.com/</item>
+        <item>https://cse.google.com/cse?cx=f32f803cb0eea451b</item>
+        <item>https://cse.google.com/cse?cx=e340fa1dad52649e0</item>
+        <item>https://translate.google.com/</item>
+        <item>https://www.baidu.com</item>
+
+        <item>https://hackyourmom.com/osvita/zanurennya-u-svit-burp-suite</item>
+
+        <item>https://spaces.im</item>
+
+        <item>https://s4.piratebuhta.info/</item>
+
+        <item>https://chaturbate.com/trans-cams/</item>
+        <item>https://ukr.bongacams.com/</item>
+        <item>https://ru.stripchat.com/girls/russian</item>
+        <item>https://www.climax.delivery/ru/chat/LailaSoti#!/</item>
+
+        <item>https://codeby.net/</item>
+        <item>https://xss.is</item>
+        <item>https://cqr.company/cqr-wiki/wiki-web-vulnerabilities/</item>
+
+        <item>https://github.com/alexvarboffin?page=1</item>
+
+        <item>https://pixelscan.net</item>
+
+        <item>https://www.guerrillamail.com</item>
+        <item>https://temp-mail.org</item>
+        <item>https://10minutemail.net</item>
+        <item>https://10minutemail.one</item>
+        <item>https://tempmail.io</item>
+
+    </string-array>
+
+</resources>

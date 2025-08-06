@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "331332046663",
+    "project_id": "tirauto-f95d8",
+    "storage_bucket": "tirauto-f95d8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:331332046663:android:09f71aa22f3b4ef5f38662",
+        "android_client_info": {
+          "package_name": "com.tirauto.transport.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPId9ye8xSKOZ3Tl5GACC6pt-YGdAhKWw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

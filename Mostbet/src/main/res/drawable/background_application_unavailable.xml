@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/im_application_unavailable" />
+    <item>
+        <shape>
+            <gradient android:startColor="?colorPrimaryDark" android:angle="90.0" android:type="linear" />
+        </shape>
+    </item>
+</layer-list>

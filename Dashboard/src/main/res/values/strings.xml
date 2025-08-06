@@ -1,0 +1,55 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name" translatable="false">Учет заказов</string>
+    <string name="app_name_splash" translatable="false">Учет заказов</string>
+
+    <string name="play_google_pub" translatable="false">Stalpro.</string>
+    <string name="url_privacy_policy" translatable="false">...</string>
+
+
+    <string name="publisher_feedback_email" translatable="false">support@stalpro.com</string>
+
+
+    <string name="app_description" translatable="false">
+*This website provides services and information on this site that are not aimed at citizens and/or residents of the USA. The information provided here is not proposed for distribution to or use by any jurisdiction where such distribution or use would be contrary to local law or regulation.**Risk Warning: Trading leveraged products such as Forex and Cryptos may not be suitable for all investors as they carry a degree of risk to your capital. Please ensure that you fully understand the risks involved, taking into account your investments objectives and level of experience, before trading, and if necessary seek independent advice.
+    </string>
+
+
+    <string name="app_phone" translatable="false">@null</string>
+    <string name="app_email" translatable="false">support@guidesgame.com</string>
+    <string name="app_address" translatable="false"></string>
+
+    <string name="app_facebook" translatable="false"></string>
+    <string name="app_twitter" translatable="false"></string>
+    <string name="app_instagram" translatable="false"></string>
+
+
+
+
+
+
+
+
+
+<!--    <string name="nav_contest">Promotions</string>-->
+<!--    <string name="nav_advantages">Benefits</string>-->
+<!--    <string name="nav_trading">Trading</string>-->
+<!--    <string name="nav_affiliate_program">Affiliate Program</string>-->
+<!--    <string name="nav_live_spreads">Live Spreads</string>-->
+<!--    <string name="nav_faq">FAQ</string>-->
+
+
+
+
+
+
+
+    <string name="nav_promo">{Promo}</string>
+
+
+    <string name="action_share">Поделиться</string>
+    <string name="ok">ОК</string>
+
+    <string name="fragment_main_downloading">Downloading…</string>
+
+</resources>

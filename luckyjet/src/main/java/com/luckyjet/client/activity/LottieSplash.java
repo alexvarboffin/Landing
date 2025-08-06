@@ -1,0 +1,383 @@
+package com.luckyjet.client.activity;
+
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
+import android.animation.ValueAnimator;
+import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.content.res.Resources;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.drawable.AnimationDrawable;
+import android.os.Build;
+import android.os.Bundle;
+import android.os.CountDownTimer;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+import android.view.animation.AccelerateDecelerateInterpolator;
+import android.view.animation.AccelerateInterpolator;
+import android.view.animation.AnimationSet;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.material.progressindicator.CircularProgressIndicator;
+import com.luckyjet.client.R;
+import com.luckyjet.client.databinding.ActivitySplashLottieBinding;
+import com.walhalla.landing.utility.NetUtils;
+import com.walhalla.ui.plugins.Module_U;
+
+import java.util.Calendar;
+
+
+
+@SuppressLint("CustomSplashScreen")
+public class LottieSplash extends AppCompatActivity {
+
+    public static final int COOL_FLAGH = Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_RECEIVER_FOREGROUND;
+    //private PulsatorLayout pulsator;
+
+    private View viewProgress;
+    /**
+     * Number of seconds to count down before showing the app open ad. This simulates the time needed
+     * to load the app.
+     */
+
+    ActivitySplashLottieBinding binding;
+
+    private long secondsRemaining;
+
+
+    private CountDownTimer countDownTimer;
+    private AnimationDrawable animationDrawable;
+
+
+    @SuppressLint("ObsoleteSdkInt")
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        super.onCreate(savedInstanceState);
+        binding = ActivitySplashLottieBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+
+//        animationDrawable = (AnimationDrawable) binding.constraintLayout.getBackground();
+//        // setting enter fade animation duration to 100mls
+//        animationDrawable.setEnterFadeDuration(200);
+//        // setting exit fade animation duration to 2 seconds
+//        animationDrawable.setExitFadeDuration(2000);
+
+
+        //textView.setText("");DLog.getAppVersion(this)
+        //binding.textVer.setText("Real time predictor!\nMade by: winspin.bet");
+        String m = firstStringText();
+        //textView.setText("");DLog.getAppVersion(this)
+        //binding.textVer.setText("Real time predictor!\nMade by: winspin.bet");
+        binding.textVer.setPaintFlags(binding.textVer.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
+        binding.textVer.setText(m);
+
+        final TextView textName = findViewById(R.id.textName);
+        textName.setText(R.string.app_name);
+
+        float dim = getResources().getDimension(R.dimen.tvProgress_translation_distance);
+        float startY = binding.textVer.getY() + dim;
+        tvProgressAnimationFirst(startY, dim, m, true);
+        animateProgressCpi0(true);
+    }
+
+    private String firstStringText() {
+        Calendar calendar = Calendar.getInstance();
+        int year = calendar.get(Calendar.YEAR);
+        String m = String.format(getString(R.string.launcher_progress_title_first), year);
+        return m;
+    }
+
+    private void tvProgressAnimationFirst(float startY, float dim, String text0, boolean b) {
+        TextView tvProgress = binding.textVer;
+        tvProgress.setText(text0);
+
+
+        float endY = startY - dim; // Расстояние подъема
+        float startScale = 1.0f;
+        float endScale = 0.8f; // Уменьшение в 20%
+
+        // Создаем и запускаем анимацию
+        ObjectAnimator translationY = ObjectAnimator.ofFloat(tvProgress, "translationY", startY, endY);
+        //ObjectAnimator scaleX = ObjectAnimator.ofFloat(tvProgress, "scaleX", startScale, endScale);
+        ObjectAnimator scaleY = ObjectAnimator.ofFloat(tvProgress, "scaleY", startScale, endScale);
+        // Анимация появления
+        ObjectAnimator fadeIn = ObjectAnimator.ofFloat(tvProgress, "alpha", 0.8f, 1.0f);
+        fadeIn.setInterpolator(new AccelerateInterpolator());
+        //fadeIn.setInterpolator(new AccelerateDecelerateInterpolator());
+        fadeIn.setDuration(800); // Длительность анимации в миллисекундах
+
+        AnimatorSet animatorSet = new AnimatorSet();
+        animatorSet.playTogether(fadeIn, translationY, /*scaleX,*/ scaleY);
+        animatorSet.setInterpolator(new AccelerateDecelerateInterpolator());
+        animatorSet.setDuration(800); // Длительность анимации в миллисекундах
+        animatorSet.addListener(new Animator.AnimatorListener() {
+            @Override
+            public void onAnimationStart(@NonNull Animator animator) {
+            }
+
+            @Override
+            public void onAnimationEnd(@NonNull Animator animator) {
+                if (b) {
+
+                    tvProgressAnimation(startY, dim, binding.textVer, secondText(), false);
+                }
+            }
+
+            @Override
+            public void onAnimationCancel(@NonNull Animator animator) {
+
+            }
+
+            @Override
+            public void onAnimationRepeat(@NonNull Animator animator) {
+
+            }
+        });
+        animatorSet.start();
+    }
+
+    private void tvProgressAnimation(float startY, float dim, TextView tvProgress, String text0, boolean b) {
+        tvProgress.setText(text0);
+
+        //launcher_progress_title_second
+        //launcher_progress_title_third
+        //launcher_progress_title_last
+
+        float endY = startY - dim; // Расстояние подъема
+        float startScale = 1.0f;
+        float endScale = 0.8f; // Уменьшение в 20%
+
+        // Создаем и запускаем анимацию
+        ObjectAnimator translationY = ObjectAnimator.ofFloat(tvProgress, "translationY", startY, endY);
+        //ObjectAnimator scaleX = ObjectAnimator.ofFloat(tvProgress, "scaleX", startScale, endScale);
+        ObjectAnimator scaleY = ObjectAnimator.ofFloat(tvProgress, "scaleY", startScale, endScale);
+        // Анимация появления
+        ObjectAnimator fadeIn = ObjectAnimator.ofFloat(tvProgress, "alpha", 0.0f, 1.0f);
+        fadeIn.setInterpolator(new AccelerateInterpolator());
+        //fadeIn.setInterpolator(new AccelerateDecelerateInterpolator());
+        fadeIn.setDuration(1200); // Длительность анимации в миллисекундах
+
+        AnimatorSet animatorSet = new AnimatorSet();
+        animatorSet.playTogether(fadeIn, translationY, /*scaleX,*/ scaleY);
+        animatorSet.setInterpolator(new AccelerateDecelerateInterpolator());
+        animatorSet.setDuration(1200); // Длительность анимации в миллисекундах
+        animatorSet.addListener(new Animator.AnimatorListener() {
+            @Override
+            public void onAnimationStart(@NonNull Animator animator) {
+            }
+
+            @Override
+            public void onAnimationEnd(@NonNull Animator animator) {
+                if (b) {
+                    tvProgressAnimation(startY, dim, binding.textVer, thirdText(), false);
+
+                }
+            }
+
+            @Override
+            public void onAnimationCancel(@NonNull Animator animator) {
+
+            }
+
+            @Override
+            public void onAnimationRepeat(@NonNull Animator animator) {
+
+            }
+        });
+        animatorSet.start();
+    }
+
+    private String thirdText() {
+        return "@@@@@@@@@@@"; //R.string.launcher_progress_title_second
+    }
+
+    private String secondText() {
+        return getString(R.string.launcher_progress_title_second);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        if (animationDrawable != null && animationDrawable.isRunning()) {
+            // stop the animation
+            animationDrawable.stop();
+        }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (animationDrawable != null && !animationDrawable.isRunning()) {
+            // start the animation
+            animationDrawable.start();
+        }
+        if (Cfg9.COUNTER_TIME > 1) {
+//            this.pulsator = findViewById(R.id.pulsator);
+//            this.pulsator.setCount(3);
+//            this.pulsator.setDuration(2_200);//single pulse duration
+//            this.pulsator.start();
+        }
+
+        if (Cfg9.cfg.isSplashScreenEnabled()) {
+            if (Cfg9.cfg.isCheckConnection()) {
+                if (NetUtils.isOnline(this)) {
+                    //if (loadStatus) {
+//            Intent intent = new Intent(this, CordovaApp.class).setFlags(COOL_FLAGH);
+//            startActivity(intent);
+//            finish();
+                    //} else {
+                    //    loadStatus = true;
+                    //}
+
+                    // Create a timer so the SplashActivity will be displayed for a fixed amount of time.
+                    createTimer();
+
+                } else {
+                    AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                    builder.setTitle(getString(R.string.network_error))
+                            .setMessage(getString(R.string.network_error_message))
+                            .setPositiveButton(getString(android.R.string.ok),
+                                    (dialog, id) -> {
+                                        dialog.cancel();
+                                        finish();
+                                    })
+                            .setNegativeButton(getString(R.string.action_open_connection_settings),
+                                    (dialog, id) -> {
+                                        dialog.cancel();
+                                        Module_U.actionWirelessSettings(this);
+                                    });
+                    AlertDialog alert = builder
+                            .setCancelable(false).create();
+                    alert.show();
+                }
+            } else {
+                createTimer();
+            }
+        } else {
+            startMainActivity();
+        }
+    }
+
+    @SuppressLint("ObsoleteSdkInt")
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        if (Build.VERSION.SDK_INT >= 19 && hasFocus) {
+            getWindow().getDecorView().setSystemUiVisibility(5126);
+        }
+    }
+
+    private void startAnimation(AnimationSet animationSet) {
+        viewProgress.startAnimation(animationSet);
+        new android.os.Handler().postDelayed(() -> startAnimation(animationSet), 10);
+    }
+
+    public static int getScreenWidth() {
+        return Resources.getSystem().getDisplayMetrics().widthPixels;
+    }
+
+
+    /**
+     * Create the countdown timer, which counts down to zero and show the app open ad.
+     */
+    private void createTimer() {
+
+        long seconds = Cfg9.COUNTER_TIME;
+
+        //final TextView counterTextView = findViewById(R.id.timer);
+
+        countDownTimer =
+                new CountDownTimer(seconds * 1000, 1000) {
+                    @Override
+                    public void onTick(long millisUntilFinished) {
+                        secondsRemaining = ((millisUntilFinished / 1000) + 1);
+                        //counterTextView.setText("" + secondsRemaining);
+                    }
+
+                    @Override
+                    public void onFinish() {
+                        timerFinish();
+                    }
+                };
+        countDownTimer.start();
+    }
+
+    private void timerFinish() {
+        secondsRemaining = 0;
+        //counterTextView.setText("Done.");
+        startMainActivity();
+    }
+
+
+    /**
+     * Start the MainActivity.
+     */
+    private void startMainActivity() {
+        try {
+            Intent intent = new Intent(this.getApplicationContext(), MainActivity.class).setFlags(COOL_FLAGH);
+            this.startActivity(intent);
+            this.overridePendingTransition(R.anim.open_next, R.anim.close_main);
+            this.finish();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void animateProgressCpi0(boolean b) {
+        CircularProgressIndicator cpiProgress = binding.cpiProgress;
+        cpiProgress.setMax(100);
+        ValueAnimator animator = ValueAnimator.ofFloat(0f, 1f);
+        animator.addListener(new AnimatorListenerAdapter() {
+            @Override
+            public void onAnimationEnd(Animator animation) {
+                if (b) {
+                    cpiProgress.setIndicatorColor(Color.GREEN);
+                    //cpiProgress.setVisibility(View.GONE);
+                    animateProgressCpi1(binding.cpiBackground, false);
+                }
+            }
+        });
+        animator.setDuration(1400); // Например, 5000 миллисекунд (5 секунд)
+        animator.addUpdateListener(animation -> {
+            // Получаем текущее значение анимации (в диапазоне от 0 до 1)
+            float progressValue = (float) animation.getAnimatedValue();
+
+            // Устанавливаем прогресс для CircularProgressIndicator
+            cpiProgress.setProgress((int) (progressValue * cpiProgress.getMax()));
+        });
+        animator.start();
+    }
+
+    private void animateProgressCpi1(CircularProgressIndicator cpiProgress, boolean b) {
+        cpiProgress.setMax(100);
+        ValueAnimator animator = ValueAnimator.ofFloat(0f, 1f);
+        animator.addListener(new AnimatorListenerAdapter() {
+            @Override
+            public void onAnimationEnd(Animator animation) {
+                if (b) {
+                    cpiProgress.setIndicatorColor(Color.GREEN);
+                    //cpiProgress.setVisibility(View.GONE);
+                    animateProgressCpi1(binding.cpiBackground, false);
+                }
+            }
+        });
+        animator.setDuration(800); // Например, 5000 миллисекунд (5 секунд)
+        animator.addUpdateListener(animation -> {
+            // Получаем текущее значение анимации (в диапазоне от 0 до 1)
+            float progressValue = (float) animation.getAnimatedValue();
+
+            // Устанавливаем прогресс для CircularProgressIndicator
+            cpiProgress.setProgress((int) (progressValue * cpiProgress.getMax()));
+        });
+        animator.start();
+    }
+}

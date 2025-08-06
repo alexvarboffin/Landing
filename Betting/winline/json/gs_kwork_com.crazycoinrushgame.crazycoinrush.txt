@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "259259734574",
+    "firebase_url": "https://sm1flappybirds.firebaseio.com",
+    "project_id": "sm1flappybirds",
+    "storage_bucket": "sm1flappybirds.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259259734574:android:63afae6fe20ea665069dbf",
+        "android_client_info": {
+          "package_name": "com.crazycoinrushgame.crazycoinrush"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "259259734574-il76pk5l6i6ho04rjkvm3rm83op8428n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.crazycoinrushgame.crazycoinrush",
+            "certificate_hash": "bc2388bfe19be7212211b95e2d2b7abbf0a735e8"
+          }
+        },
+        {
+          "client_id": "259259734574-0smlkel5cg96befem752u3t4t6csql12.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpsCrn5UXIK3SCLZUnP8zKJwYceYqe5ZA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "259259734574-0smlkel5cg96befem752u3t4t6csql12.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

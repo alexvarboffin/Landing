@@ -1,0 +1,22 @@
+<resources>
+
+    <string name="app_name" translatable="false">MOSTBET.RUS</string>
+    <string name="app_name_splash" translatable="false">MOSTBET.RUS</string>
+
+    <string name="play_google_pub" translatable="false">MOSTBET.RUS</string>
+    <string name="url_privacy_policy" translatable="false">MOSTBET.RUS/privacy.pdf</string>
+    <string name="url_privacy_rules" translatable="false">MOSTBET.RUS/rules.pdf</string>
+
+
+    <string name="publisher_feedback_email" translatable="false">support@MOSTBET.RUS</string>
+
+
+    <string name="app_description" translatable="false">
+*This website provides services and information on this site...
+    </string>
+
+    <string name="action_share">Share</string>
+    <string name="ok">ОК</string>
+
+
+</resources>

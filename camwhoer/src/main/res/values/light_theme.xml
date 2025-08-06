@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.Pixel" parent="AppTheme.Simple.Light">
+        <item name="simpleThemePrimaryColor">@color/colorPrimaryPixel</item>
+        <item name="simpleThemePrimaryLightColor">@color/colorPrimaryLightPixel</item>
+<!--        <item name="simpleThemePrimaryColor">#FF6D00</item>-->
+<!--        <item name="simpleThemePrimaryLightColor">#FF6D00</item>-->
+
+        <item name="simpleThemeAccentColor">@color/colorAccentPixel</item>
+        <item name="simpleThemeTextPrimaryColor">@color/colorTextPrimaryPixel</item>
+        <item name="simpleThemeTextSecondaryColor">@color/colorTextSecondaryPixel</item>
+    </style>
+
+    <style name="AppTheme.FDroid" parent="AppTheme.Simple.Light">
+        <item name="simpleThemePrimaryColor">@color/colorPrimaryFDroid</item>
+        <item name="simpleThemePrimaryLightColor">@color/colorPrimaryLightFDroid</item>
+        <item name="simpleThemeAccentColor">@color/colorAccentFDroid</item>
+        <item name="simpleThemeTextPrimaryColor">@color/colorTextPrimaryFDroid</item>
+        <item name="simpleThemeTextSecondaryColor">@color/colorTextSecondaryFDroid</item>
+    </style>
+
+    <style name="AppTheme.RenaLight" parent="AppTheme.Simple.Light">
+        <item name="simpleThemePrimaryColor">@color/colorPrimaryRenaLight</item>
+        <item name="simpleThemePrimaryLightColor">@color/colorPrimaryLightRenaLight</item>
+        <item name="simpleThemeAccentColor">@color/colorAccentRenaLight</item>
+        <item name="simpleThemeTextPrimaryColor">@color/colorTextPrimaryRenaLight</item>
+        <item name="simpleThemeTextSecondaryColor">@color/colorTextSecondaryRenaLight</item>
+    </style>
+
+</resources>

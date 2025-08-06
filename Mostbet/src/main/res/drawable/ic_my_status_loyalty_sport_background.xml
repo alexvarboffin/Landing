@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:startColor="#ff1d470e" android:endColor="#ff279200" android:angle="270.0" android:type="linear" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/ic_my_status_loyalty_sport_foreground" />
+</layer-list>

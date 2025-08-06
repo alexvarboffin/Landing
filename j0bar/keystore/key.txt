@@ -1,0 +1,4 @@
+            keyAlias 'release'
+            keyPassword 'release'
+            storeFile file('keystore/keystore.jks')
+            storePassword 'release'

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+<!--    @style/AppTheme.NoActionBar-->
+
+    <application
+        android:name="com.walhalla.android.webview.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.Light"
+        android:usesCleartextTraffic="true"
+        tools:ignore="UnusedAttribute">
+
+        <activity
+            android:name="com.walhalla.android.webview.ui.activities.MainAct"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:label="HTML Home Screen"
+
+            tools:ignore="RedundantLabel">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="geo" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+
+                <data android:host="*" />
+            </intent-filter>
+
+        </activity>
+
+
+        <activity
+            android:name="com.walhalla.android.webview.ui.activities.ManifestExplorer"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:label="HTML Explorer"
+
+            tools:ignore="RedundantLabel">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="geo" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+
+                <data android:host="*" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name="com.walhalla.android.webview.ui.activities.SettingsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:label="@string/label_settings"
+            tools:ignore="RedundantLabel" />
+
+        <receiver
+            android:name="com.walhalla.MyTrackerReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <!--        <receiver-->
+        <!--            android:name="com.yandex.metrica.MetricaEventHandler"-->
+        <!--            tools:node="remove" />-->
+
+    </application>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="http" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="https" />
+        </intent>
+
+    </queries>
+</manifest>

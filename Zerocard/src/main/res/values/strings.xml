@@ -1,0 +1,52 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+    <string name="app_name" translatable="false">Zero</string>
+    <string name="app_name_splash" translatable="false">Zero</string>
+
+
+    <string name="play_google_pub" translatable="false">iqcent</string>
+    <string name="url_privacy_policy" translatable="false">https://iqcent.com/en/terms</string>
+
+
+    <string name="app_description" translatable="false">All-in-One Trading Platform
+    \n\nThe financial services provided by this website carry a high level of risk and can result in the loss of all of your funds. You should never invest money that you cannot afford to lose. Please ensure you read our terms and conditions before making any operation in the platform. Under no circumstances the company has any liability to any person or entity for any loss or damage cause by operations on this website. IQCent nor its agents or partners are not registered and do not provide any services on the USA territory.</string>
+
+
+    <string name="app_phone" translatable="false">@null</string>
+    <string name="app_email" translatable="false">@null</string>
+    <string name="app_address" translatable="false">Wave Makers LTD - Nr. 103581, Trust Company Complex, Ajeltake Road, Ajeltake Island, Majuro, Marshall Islands MH96960</string>
+
+    <string name="app_facebook" translatable="false">@null</string>
+    <string name="app_twitter" translatable="false">https://twitter.com/iqcentcom</string>
+    <string name="app_instagram" translatable="false">https://instagram.com/iqcentcom</string>
+
+
+
+
+
+
+
+
+
+    <string name="nav_contest">Promotions</string>
+    <string name="nav_advantages">Benefits</string>
+    <string name="nav_faq">FAQ</string>
+
+
+
+
+
+
+
+    <string name="nav_promo">{Promo}</string>
+
+    <string name="launcher_progress_title_last">Done</string>
+    <string name="launcher_progress_title_second">Raising the coefficients</string>
+    <string name="launcher_progress_title_sixth">Checking payment systems</string>
+
+
+    <string name="launcher_progress_title_first">© %1$d Zerocard. All rights reserved.</string>
+    <string name="app_subtitle">gggggggggggg</string>
+
+</resources>

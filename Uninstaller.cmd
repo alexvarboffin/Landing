@@ -1,0 +1,24 @@
+adb uninstall "com.betapsbookmakersbonus.client"
+adb uninstall "com.chatgpt.app"
+adb uninstall "com.m4u.cryptotracker.app"
+adb uninstall "com.stalpro.dashboard.admin"
+adb uninstall "com.kwknocook.app"
+adb uninstall "hugosway.forex"
+adb uninstall "com.freebetbookmakersbetting.mobile"
+adb uninstall "hugosway.forex"
+adb uninstall "com.iqcent.pro"
+adb uninstall 'com.iqcent.pro'
+adb uninstall "com.j0bar.client"
+adb uninstall "com.ketodieto.app"
+adb uninstall "com.winspinprodroid.pro"
+adb uninstall 'com.winspinprodroid.pro'
+adb uninstall "com.microchecker.app"
+adb uninstall "com.mostapkbet.client"
+adb uninstall "com.kwknocook.app"
+adb uninstall "com.prm4u.app"
+adb uninstall "com.royspins.app"
+adb uninstall "com.royspins.app"
+adb uninstall "ru.guidesgame.podarochnyekody"
+adb uninstall "io.zerocard.pro"
+adb uninstall 'io.zerocard.pro'
+pause

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "309807052186",
+    "project_id": "biletiz-rabota",
+    "storage_bucket": "biletiz-rabota.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309807052186:android:bee732ecccf7dbe68f3623",
+        "android_client_info": {
+          "package_name": "online.biletiz.rabota"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "309807052186-qu587i2asirq015k1t10rdopgmim7es1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRtimmtEkghK5rAUjPThPhjsyhXoE6GQ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "309807052186-qu587i2asirq015k1t10rdopgmim7es1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
