@@ -1,5 +1,6 @@
 [versions]
 
+activityKtx = "1.11.0-rc01"
 android-compileSdk = "36"
 android-minSdk = "23"
 android-targetSdk = "36"
@@ -67,15 +68,15 @@ multidex = "2.0.1"
 navigation = "2.9.2"
 
 okhttp = "4.12.0"
-onesignal = "5.1.21"
+onesignal = "5.1.35"
 oopsnointernet = "2.0.0"
-playServicesAds = "23.6.0"
+playServicesAds = "24.5.0"
 playServicesAdsIdentifier = "18.2.0"
 precompose = "1.7.0-alpha01"
 preference = "1.2.1"
 
 pulsator4droid = "1.0.3"
-push = "4.0.0"
+push = "4.1.1"
 review = "2.0.2"
 room = "2.6.1"
 runner = "1.6.2"
@@ -85,6 +86,7 @@ taptargetview = "1.15.0"
 annotationExperimental = "1.5.1"
 [libraries]
 
+androidx-activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "activityKtx" }
 androidx-annotation-experimental = { module = "androidx.annotation:annotation-experimental", version.ref = "annotationExperimental" }
 
 #ktor-server-tests = { module = "io.ktor:ktor-server-tests-jvm", version.ref = "ktor" }
@@ -118,7 +120,7 @@ androidx-lifecycle-runtime-compose = { group = "org.jetbrains.androidx.lifecycle
 androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
 androidx-lifecycle-viewmodel = { group = "org.jetbrains.androidx.lifecycle", name = "lifecycle-viewmodel", version.ref = "lifecycle" }
 androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
-lifecycle-viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel", version.ref = "lifecycle" }
+lifecycle-viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel", version = "2.9.2" }
 material = { group = "com.google.android.material", name = "material", version.ref = "androidx-material" }
 androidx-multidex = { module = "androidx.multidex:multidex", version.ref = "multidex" }
 androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigation" }

@@ -76,7 +76,7 @@ dependencies {
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
     implementation 'com.github.acsbendi:Android-Request-Inspector-WebView:1.0.6'
 
-    implementation "androidx.lifecycle:lifecycle-viewmodel:$rootProject.lifecycle_version"
+    implementation (libs.lifecycle.viewmodel)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation "androidx.webkit:webkit:1.10.0"
     implementation 'androidx.preference:preference:1.2.1'

@@ -93,7 +93,7 @@ dependencies {
 
     implementation 'androidx.multidex:multidex:2.0.1'
 
-    implementation "androidx.lifecycle:lifecycle-viewmodel:$rootProject.lifecycle_version"
+    implementation (libs.lifecycle.viewmodel)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     //implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.22"//kotlin plugin version-> 1.7.1
     implementation 'com.google.code.gson:gson:2.11.0'

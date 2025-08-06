@@ -124,7 +124,7 @@ dependencies {
     //implementation 'com.google.android.gms:play-services-base:16.1.99'
     implementation libs.androidx.multidex
 
-    implementation "androidx.lifecycle:lifecycle-viewmodel:$rootProject.lifecycle_version"
+    implementation (libs.lifecycle.viewmodel)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
 
 
