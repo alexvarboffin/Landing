@@ -126,12 +126,12 @@ include(":shared")
 project(":shared").projectDir = File("../WalhallaUI\\shared")
 
 include(":features:landing")
-project(":features:landing").projectDir = file("C:\\src\\Synced\\WalhallaUI\\features\\landing")
+project(":features:landing").projectDir = file("../WalhallaUI\\features\\landing")
 include(":features:webview")
-project(":features:webview").projectDir = File("C:\\src\\Synced\\WalhallaUI\\features\\webview")
+project(":features:webview").projectDir = File("../WalhallaUI\\features\\webview")
 
 include(":features:ui")
-project(":features:ui").projectDir = file("C:\\src\\Synced\\WalhallaUI\\features\\ui")
+project(":features:ui").projectDir = file("../WalhallaUI\\features\\ui")
 //include(":kwk:c")
 //project(':kwk:c').projectDir = File("@@@/corelib")
 

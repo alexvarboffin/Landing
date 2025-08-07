@@ -91,7 +91,7 @@ dependencies {
     //implementation 'com.google.firebase:firebase-messaging:17.3.99'
     //implementation 'com.google.android.gms:play-services-ads-identifier:16.0.99'
     //implementation 'com.google.android.gms:play-services-base:16.1.99'
-    implementation 'androidx.multidex:multidex:2.0.1'
+   implementation(libs.androidx.multidex)
 
     implementation (libs.lifecycle.viewmodel)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)

@@ -1,31 +1,28 @@
 [versions]
 
+accompanistSwiperefresh = "0.36.0"
+activity-compose = "1.10.1"
 activityKtx = "1.11.0-rc01"
+adsIdentifier = "1.0.0-alpha05"
+agp = "8.11.1"
+analytics = "7.10.0"
+android = "3.0.1"
+android-buildTools = "36.0.0"
 android-compileSdk = "36"
 android-minSdk = "23"
 android-targetSdk = "36"
-android-buildTools = "36.0.0"
-adsIdentifier = "1.0.0-alpha05"
-android = "3.0.1"
-
-
-accompanistSwiperefresh = "0.36.0"
-activity-compose = "1.10.1"
-agp = "8.12.0"
-analytics = "7.10.0"
 androidbrowserhelper = "2.6.2"
 androidx-activityCompose = "1.10.0"
 androidx-appcompat = "1.7.1"
 androidx-constraintlayout = "2.2.1"
 androidx-core-ktx = "1.15.0"
 androidx-espresso-core = "3.6.1"
-
 androidx-material = "1.12.0"
 androidx-test-junit = "1.2.1"
 annotation = "1.9.1"
+annotationExperimental = "1.5.1"
 appUpdate = "2.1.0"
-browser = "1.8.0"
-
+browser = "1.9.0"
 cardview = "1.0.0"
 coilCompose = "3.3.0"
 compileSdk = "36"
@@ -33,7 +30,6 @@ compose-bom = "2025.07.00"
 compose-compiler = "1.5.8"
 compose-multiplatform = "1.7.0"
 core = "1.16.0"
-
 coreSplashscreen = "1.0.1"
 datastore = "1.1.7"
 espressoCore = "3.6.1"
@@ -45,7 +41,7 @@ firebaseMessaging = "25.0.0"
 google-services = "4.4.3"
 gradle = "8.2.2"
 gson = "2.13.1"
-hilt = "2.51.1"
+hilt = "2.57"
 hilt-navigation-compose = "1.2.0"
 installreferrer = "2.2"
 jsoup = "1.21.1"
@@ -59,14 +55,11 @@ ksp = "2.1.0-1.0.29"
 ktor = "3.2.2"
 legacySupportV4 = "1.0.0"
 lifecycle = "2.9.2"
-
 logback = "1.5.18"
 lottie = "6.6.7"
 material = "1.12.0"
-
 multidex = "2.0.1"
 navigation = "2.9.2"
-
 okhttp = "4.12.0"
 onesignal = "5.1.35"
 oopsnointernet = "2.0.0"
@@ -74,7 +67,6 @@ playServicesAds = "24.5.0"
 playServicesAdsIdentifier = "18.2.0"
 precompose = "1.7.0-alpha01"
 preference = "1.2.1"
-
 pulsator4droid = "1.0.3"
 push = "4.1.1"
 review = "2.0.2"
@@ -82,8 +74,6 @@ room = "2.6.1"
 runner = "1.6.2"
 swiperefreshlayout = "1.1.0"
 taptargetview = "1.15.0"
-
-annotationExperimental = "1.5.1"
 [libraries]
 
 androidx-activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "activityKtx" }
@@ -120,6 +110,7 @@ androidx-lifecycle-runtime-compose = { group = "org.jetbrains.androidx.lifecycle
 androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
 androidx-lifecycle-viewmodel = { group = "org.jetbrains.androidx.lifecycle", name = "lifecycle-viewmodel", version.ref = "lifecycle" }
 androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+lifecycle-livedata-core-ktx = { module = "org.jetbrains.androidx.lifecycle:lifecycle-livedata-core-ktx", version.ref = "lifecycle" }
 lifecycle-viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel", version = "2.9.2" }
 material = { group = "com.google.android.material", name = "material", version.ref = "androidx-material" }
 androidx-multidex = { module = "androidx.multidex:multidex", version.ref = "multidex" }
