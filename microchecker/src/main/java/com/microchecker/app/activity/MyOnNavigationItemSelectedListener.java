@@ -9,7 +9,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 
 import com.google.android.material.navigation.NavigationView;
-import com.microchecker.app.Cfg9;
+import com.microchecker.app.Cfg91;
 import com.microchecker.app.R;
 import com.walhalla.landing.Const;
 import com.walhalla.landing.pagination.SinglePagination;
@@ -19,7 +19,7 @@ public class MyOnNavigationItemSelectedListener extends SinglePagination impleme
     private final MainActivity a;
 
     public MyOnNavigationItemSelectedListener(MainActivity activity) {
-        super(Cfg9.v0);
+        super(Cfg91.v0);
         this.a = activity;
     }
 

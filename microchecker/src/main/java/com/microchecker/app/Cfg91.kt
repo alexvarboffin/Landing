@@ -3,7 +3,8 @@ package com.microchecker.app
 import com.walhalla.landing.config.Cfg
 
 
-object Cfg9 {
+object Cfg91 {
+    @JvmField
     var cfg: Cfg = Cfg.Builder()
         .setToolbarEnabled(true)
         .setCounterTimeMs(24000000) //2.2s

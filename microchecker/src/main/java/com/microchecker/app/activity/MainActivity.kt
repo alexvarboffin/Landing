@@ -10,7 +10,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.snackbar.Snackbar
-import com.microchecker.app.Cfg9
+import com.microchecker.app.Cfg91
 import com.microchecker.app.R
 import com.microchecker.app.databinding.MainBinding
 import com.walhalla.landing.base.ActivityConfig
@@ -23,6 +23,7 @@ import com.walhalla.ui.plugins.Module_U.moreApp
 import com.walhalla.ui.plugins.Module_U.shareThisApp
 import com.walhalla.webview.ReceivedError
 import java.util.concurrent.TimeUnit
+import androidx.core.view.get
 
 class MainActivity : BaseActivity() {
     private var mHandler: Handler? = null
@@ -44,13 +45,10 @@ class MainActivity : BaseActivity() {
         //presenter = new WPresenterImpl(handler, this);
         selectedListener = MyOnNavigationItemSelectedListener(this)
         val activityConfig: ActivityConfig = object : ActivityConfig {
-            override fun isProgressEnabled(): Boolean {
-                return this@MainActivity.isProgressEnabled
-            }
-
-            override fun isSwipeEnabled(): Boolean {
-                return this@MainActivity.isSwipeEnabled
-            }
+            override val isProgressEnabled: Boolean
+                get() = this@MainActivity.isProgressEnabled
+            override val isSwipeEnabled: Boolean
+                get() = this@MainActivity.isSwipeEnabled
         }
         presenter1 = WViewPresenter(this, activityConfig)
         //toolbar.setVisibility(View.GONE);
@@ -67,8 +65,7 @@ class MainActivity : BaseActivity() {
         //setContentView(bind.getRoot());
         binding!!.toolbar.visibility = View.GONE
 
-
-        //        mAdView = 222(R.id.b1);
+//        mAdView = 222(R.id.b1);
 //        com.google.android.gms.ads.AdRequest adRequest = new AdRequest.Builder().build();
 // Start loading the ad in the background.
 //        mAdView.loadAd(adRequest);
@@ -100,7 +97,7 @@ class MainActivity : BaseActivity() {
 //            } else {
 //                onNavigationItemSelected(m);
 //            }
-            val m = menu.getItem(0) //promo
+            val m = menu[0] //promo
             //MenuItem m = menu.getItem(1);
             switchViews(false)
             selectedListener!!.onNavigationItemSelected(m)
@@ -191,14 +188,10 @@ class MainActivity : BaseActivity() {
         return true
     }
 
-    override fun isProgressEnabled(): Boolean {
-        return Cfg9.cfg.isProgressEnabled
-    }
-
-    override fun isSwipeEnabled(): Boolean {
-        return Cfg9.cfg.isSwipeEnabled
-    }
-
+    override val isProgressEnabled: Boolean
+        get() =  Cfg91.cfg.isProgressEnabled
+    override val isSwipeEnabled: Boolean
+        get() = Cfg91.cfg.isSwipeEnabled
 
     override fun onBackPressed() {
         if (binding!!.drawerLayout != null && binding!!.drawerLayout.isDrawerOpen(GravityCompat.START)) {

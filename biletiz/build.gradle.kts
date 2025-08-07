@@ -110,7 +110,7 @@ dependencies {
     implementation(project(":features:ui"))
     implementation(project(":features:landing"))
     implementation(project(":kwk:c"))
-    //implementation project(":corelib")
+    //implementation project(":core lib")
     //implementation project(":stubInjector")
 
     //implementation "com.google.android.gms:play-services-location:16.0.99"
@@ -119,7 +119,7 @@ dependencies {
     //implementation "com.google.android.gms:play-services-base:16.1.99"
     implementation(libs.androidx.multidex)
 
-    implementation(libs.lifecycle.viewmodel)
+    implementation(libs.androidx.lifecycle.viewmodel)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     //implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.22"//kotlin plugin version-> 1.7.1
     implementation(libs.gson)

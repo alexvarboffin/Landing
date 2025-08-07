@@ -32,7 +32,7 @@ android {
         create("key0") {
             keyAlias = "betapsbookmakersbonus"
             keyPassword = "release"
-            storeFile = file("D:\\kwork\\WebView\\Landing\\keystore\\keystore.jks")
+            storeFile = file("../../keystore\\keystore.jks")
             storePassword = "release"
         }
     }
@@ -63,6 +63,9 @@ android {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
+    kotlinOptions {
+        jvmTarget = "17"
+    }
 }
 
 dependencies {
@@ -75,7 +78,7 @@ dependencies {
     implementation(project(":features:landing"))
     implementation(libs.androidx.multidex)
 
-    implementation(libs.lifecycle.viewmodel)
+    implementation(libs.androidx.lifecycle.viewmodel)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.gson)
 }

@@ -25,7 +25,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.progressindicator.CircularProgressIndicator
-import com.microchecker.app.Cfg9
+import com.microchecker.app.Cfg91
 import com.microchecker.app.R
 import com.microchecker.app.databinding.SplashMicrocheckerBinding
 import com.walhalla.landing.utility.NetUtils
@@ -235,8 +235,8 @@ class LottieSplash : AppCompatActivity() {
 ////            this.pulsator.setDuration(2_200);//single pulse duration
 ////            this.pulsator.start();
 //        }
-        if (Cfg9.cfg.isSplashScreenEnabled) {
-            if (Cfg9.cfg.isCheckConnection) {
+        if (Cfg91.cfg.isSplashScreenEnabled) {
+            if (Cfg91.cfg.isCheckConnection) {
                 if (NetUtils.isOnline(this)) {
                     //if (loadStatus) {
 //            Intent intent = new Intent(this, CordovaApp.class).setFlags(COOL_FLAGH);
@@ -295,7 +295,7 @@ class LottieSplash : AppCompatActivity() {
      */
     private fun createTimer() {
         //final TextView counterTextView = findViewById(R.id.timer);
-        countDownTimer = object : CountDownTimer(Cfg9.cfg.counterTimeMs, 1000) {
+        countDownTimer = object : CountDownTimer(Cfg91.cfg.counterTimeMs, 1000) {
             override fun onTick(millisUntilFinished: Long) {
                 secondsRemaining = ((millisUntilFinished / 1000) + 1)
                 //counterTextView.setText("" + secondsRemaining);

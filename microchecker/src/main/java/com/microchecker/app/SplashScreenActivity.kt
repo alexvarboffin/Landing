@@ -22,7 +22,7 @@ class SplashScreenActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.splash_screen_activity)
 
-        //        final TextView textView = findViewById(R.id.appName);
+//        final TextView textView = findViewById(R.id.appName);
 //        final TextView appVersion = findViewById(R.id.appVersion);
 //        appVersion.setText(DLog.getAppVersion(this));
         val progressBar = findViewById<ProgressBar>(R.id.intro_progress)
@@ -50,8 +50,8 @@ class SplashScreenActivity : AppCompatActivity() {
 //                });
 //            }
 //        }, 1200);
-        if (Cfg9.cfg.isSplashScreenEnabled) {
-            if (Cfg9.cfg.isCheckConnection) {
+        if (Cfg91.cfg.isSplashScreenEnabled) {
+            if (Cfg91.cfg.isCheckConnection) {
                 if (NetUtils.isOnline(this)) {
                     //if (loadStatus) {
 //            Intent intent = new Intent(this, CordovaApp.class).setFlags(COOL_FLAGH);

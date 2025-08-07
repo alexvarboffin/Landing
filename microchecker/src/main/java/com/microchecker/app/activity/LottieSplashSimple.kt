@@ -15,7 +15,7 @@ import android.view.animation.AnimationSet
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import com.microchecker.app.Cfg9
+import com.microchecker.app.Cfg91
 import com.microchecker.app.R
 import com.walhalla.landing.utility.NetUtils
 import com.walhalla.ui.plugins.Module_U.actionWirelessSettings
@@ -113,8 +113,8 @@ class LottieSplashSimple : AppCompatActivity() {
 //            this.pulsator.start();
         }
 
-        if (Cfg9.cfg.isSplashScreenEnabled) {
-            if (Cfg9.cfg.isCheckConnection) {
+        if (Cfg91.cfg.isSplashScreenEnabled) {
+            if (Cfg91.cfg.isCheckConnection) {
                 if (NetUtils.isOnline(this)) {
                     //if (loadStatus) {
 //            Intent intent = new Intent(this, CordovaApp.class).setFlags(COOL_FLAGH);
