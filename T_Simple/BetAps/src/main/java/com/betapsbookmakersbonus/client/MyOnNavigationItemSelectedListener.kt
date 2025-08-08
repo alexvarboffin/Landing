@@ -11,7 +11,9 @@ import com.walhalla.landing.pagination.SinglePagination
 
 class MyOnNavigationItemSelectedListener(private val a: MainActivity) :
 
+    //
     //BetApsCfg9.cryptUrl
+
     SinglePagination("https://lordseriala.life/"), NavigationView.OnNavigationItemSelectedListener {
 
     override fun enc0(input: String): IntArray {

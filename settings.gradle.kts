@@ -90,14 +90,16 @@ include(":biletiz")
 
 //include(":libSimpleCore")
 //include(":Dashboard")
-include(":Royspins")
+//include(":CINEMA:Royspins")
+include(":CINEMA:Lordseriala")
+
 
 //include(":Simple0")
 //include(":Ketodieto")
 //include(":Prm4u")
 //include(":Empty")
 //include(":cryptotracker")
-include(":microchecker")
+//include(":microchecker")
 //include(":j0bar")
 
 //include(":stub_mtracker")

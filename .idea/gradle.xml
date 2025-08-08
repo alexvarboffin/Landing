@@ -7,11 +7,12 @@
         <option name="testRunner" value="CHOOSE_PER_TEST" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleHome" value="C:\android\gradle\gradle-7.3.3" />
-        <option name="gradleJvm" value="23" />
+        <option name="gradleJvm" value="jbr-21" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/Royspins" />
+            <option value="$PROJECT_DIR$/CINEMA" />
+            <option value="$PROJECT_DIR$/CINEMA/Lordseriala" />
             <option value="$PROJECT_DIR$/T_Simple" />
             <option value="$PROJECT_DIR$/T_Simple/BetAps" />
             <option value="$PROJECT_DIR$/biletiz" />
@@ -21,7 +22,6 @@
             <option value="$PROJECT_DIR$/kwk" />
             <option value="$PROJECT_DIR$/kwk/StelthCore" />
             <option value="$PROJECT_DIR$/kwk/corelib" />
-            <option value="$PROJECT_DIR$/microchecker" />
             <option value="$PROJECT_DIR$/sourcefb" />
             <option value="$PROJECT_DIR$/stub" />
             <option value="$PROJECT_DIR$/stub/stubInjector" />

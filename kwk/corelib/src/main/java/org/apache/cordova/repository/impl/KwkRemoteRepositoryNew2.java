@@ -9,8 +9,7 @@ import androidx.preference.PreferenceManager;
 
 import com.appsflyer.AppsFlyerLib;
 import com.google.gson.Gson;
-import com.onesignal.OSDeviceState;
-import com.onesignal.OneSignal;
+
 import com.walhalla.ui.DLog;
 
 import org.apache.cordova.Cst;
@@ -157,10 +156,10 @@ public class KwkRemoteRepositoryNew2 extends AbstractDatasetRepository
                         callback.successResponse(aa);
 
                         //Delayed Request
-                        Handler handler1 = new Handler();
-                        handler1.postDelayed(() -> {
-                            partNumTwo(context, client_id);
-                        }, 7_000);
+//                        Handler handler1 = new Handler();
+//                        handler1.postDelayed(() -> {
+//                            partNumTwo(context, client_id);
+//                        }, 7_000);
 
                         //### UIVisibleDataset aa = new UIVisibleDataset(ScreenType.WEB_VIEW, offerUrl);
                         //### aa.setEnabled(true);
@@ -175,63 +174,63 @@ public class KwkRemoteRepositoryNew2 extends AbstractDatasetRepository
     }
 
 
-    public static void partNumTwo(Context context, String client_id) {
-        String firebase_push_token = TPreferences.getFirebaseToken(context);
-
-
-        OSDeviceState mm = OneSignal.getDeviceState();
-        String onesignal_player_id = "";//onesignal_player_id
-        if (mm != null && mm.getUserId() != null) {
-            onesignal_player_id = mm.getUserId();
-        }
-
-        DLog.d("[OS = 2]" + onesignal_player_id);
-//                        DLog.d("@@@@@@@@@@[ID 2]@@@" + client_id);
-//                        DLog.d("@@@@@@@@@@[ID 3]@@@" + firebase_push_token);//empty
-
-//        RequestBody formBody = new FormBody.Builder()
-//                .add("onesignal_player_id", "" + onesignal_player_id)
-//                .add("client_id", "" + client_id)
-//                .add("firebase_push_token", "" + firebase_push_token)
+//    public static void partNumTwo(Context context, String client_id) {
+//        String firebase_push_token = TPreferences.getFirebaseToken(context);
+//
+//
+//        OSDeviceState mm = OneSignal.getDeviceState();
+//        String onesignal_player_id = "";//onesignal_player_id
+//        if (mm != null && mm.getUserId() != null) {
+//            onesignal_player_id = mm.getUserId();
+//        }
+//
+//        DLog.d("[OS = 2]" + onesignal_player_id);
+////                        DLog.d("@@@@@@@@@@[ID 2]@@@" + client_id);
+////                        DLog.d("@@@@@@@@@@[ID 3]@@@" + firebase_push_token);//empty
+//
+////        RequestBody formBody = new FormBody.Builder()
+////                .add("onesignal_player_id", "" + onesignal_player_id)
+////                .add("client_id", "" + client_id)
+////                .add("firebase_push_token", "" + firebase_push_token)
+////                .build();
+//
+//        OkHttpClient client = HttpClient.getUnsafeOkHttpClient0(context);
+////        String url = __U__
+////                + client_id
+////                + "?gaid=&apps_flyer_id=&client_id="
+////                + "&onesignal_player_id=" + onesignal_player_id
+////                + "&firebase_push_token=" + firebase_push_token;
+//
+//
+//        //SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context.getApplicationContext());
+//        TPreferences preferences = TPreferences.getInstance(context.getApplicationContext());
+//        String url = MainPresenter.makeUrl(__U__, preferences, context);
+//        DLog.d("@[2]@" + url);
+//
+//        Request request = new Request.Builder()
+//                .url(url)
+//                .post(makeBody(context))
 //                .build();
-
-        OkHttpClient client = HttpClient.getUnsafeOkHttpClient0(context);
-//        String url = __U__
-//                + client_id
-//                + "?gaid=&apps_flyer_id=&client_id="
-//                + "&onesignal_player_id=" + onesignal_player_id
-//                + "&firebase_push_token=" + firebase_push_token;
-
-
-        //SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context.getApplicationContext());
-        TPreferences preferences = TPreferences.getInstance(context.getApplicationContext());
-        String url = MainPresenter.makeUrl(__U__, preferences, context);
-        DLog.d("@[2]@" + url);
-
-        Request request = new Request.Builder()
-                .url(url)
-                .post(makeBody(context))
-                .build();
-
-        DLog.d("[URL_2]: " + url);
-
-        Call call0 = client.newCall(request);
-        call0.enqueue(new Callback() {
-            @Override
-            public void onFailure(@NotNull Call call, @NotNull IOException e) {
-                DLog.handleException(e);
-            }
-
-            @Override
-            public void onResponse(@NotNull Call call, @NotNull Response response) throws IOException {
-
-                ResponseBody body = response.body();
-                String json0 = "";
-                if (body != null) {
-                    json0 = body.string();
-                    DLog.d("{@@@}" + json0);
-                }
-            }
-        });
-    }
+//
+//        DLog.d("[URL_2]: " + url);
+//
+//        Call call0 = client.newCall(request);
+//        call0.enqueue(new Callback() {
+//            @Override
+//            public void onFailure(@NotNull Call call, @NotNull IOException e) {
+//                DLog.handleException(e);
+//            }
+//
+//            @Override
+//            public void onResponse(@NotNull Call call, @NotNull Response response) throws IOException {
+//
+//                ResponseBody body = response.body();
+//                String json0 = "";
+//                if (body != null) {
+//                    json0 = body.string();
+//                    DLog.d("{@@@}" + json0);
+//                }
+//            }
+//        });
+//    }
 }

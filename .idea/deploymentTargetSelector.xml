@@ -2,16 +2,22 @@
 <project version="4">
   <component name="deploymentTargetSelector">
     <selectionStates>
-      <SelectionState runConfigName="microchecker">
+      <SelectionState runConfigName="T_Simple.BetAps">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="biletiz">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
       <SelectionState runConfigName="Royspins">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="T_Simple.BetAps">
+      <SelectionState runConfigName="microchecker">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="biletiz">
+      <SelectionState runConfigName="CINEMA.Royspins">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="CINEMA.Lordseriala">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>

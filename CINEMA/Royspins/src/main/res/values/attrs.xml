@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="fontFamilyMedium" format="reference" />
+    <attr name="fontFamilyRegular" format="reference" />
+    <attr name="fontFamilyLight" format="reference" />
+</resources>

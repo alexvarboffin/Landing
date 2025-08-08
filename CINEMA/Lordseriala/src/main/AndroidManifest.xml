@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="life.lordseriala.android.App"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="DataExtractionRules,GoogleAppIndexingWarning"
+        tools:targetApi="m">
+
+<!--        com.royspins.app.SplashScreenActivity-->
+
+        <activity
+            android:name="life.lordseriala.android.activity.MainActivity0"
+            android:exported="true"
+            android:noHistory="true"
+
+            android:theme="@style/AppTheme.Launcher"
+            tools:ignore="LockedOrientationActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="unspecified">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+<!--     android:configChanges="orientation|screenSize|keyboardHidden"    android:screenOrientation="portrait"-->
+
+<!--        <activity-->
+<!--            android:name="com.royspins.app.activity.MainActivity0"-->
+<!--            android:label="@string/app_name"-->
+
+<!--            android:theme="@style/FullScreenTheme"-->
+<!--            tools:ignore="LockedOrientationActivity,RedundantLabel">-->
+
+<!--        </activity>-->
+
+        <activity
+            android:name="com.walhalla.landing.activity.AboutActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:noHistory="true"
+            android:parentActivityName="life.lordseriala.android.activity.MainActivity0"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity,UnusedAttribute" />
+
+        <activity
+            android:name="life.lordseriala.android.activity.ContactActivity"
+            android:noHistory="true"
+            android:parentActivityName="life.lordseriala.android.activity.MainActivity0"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity,UnusedAttribute" />
+
+    </application>
+
+</manifest>

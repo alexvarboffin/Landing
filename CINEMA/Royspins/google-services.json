@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "306526535504",
+    "project_id": "kwklandroyspins",
+    "storage_bucket": "kwklandroyspins.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:306526535504:android:db846ec7332deef021b655",
+        "android_client_info": {
+          "package_name": "com.royspins.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "306526535504-1dn2e33n2nsi0167ujteof0nrjmpr9hp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.royspins.app",
+            "certificate_hash": "93499b691447c26453007d25b8c97591733f414f"
+          }
+        },
+        {
+          "client_id": "306526535504-161po1rsvntk9ueosgtsjtdn357j5m9d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaGHitKspY0-i6pq6O4Jy22piTB6bJYIo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "306526535504-161po1rsvntk9ueosgtsjtdn357j5m9d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

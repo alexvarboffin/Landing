@@ -24,6 +24,7 @@ import com.walhalla.webview.MyWebChromeClient
 import com.walhalla.webview.ReceivedError
 import online.biletiz.rabota.R
 import androidx.core.view.isVisible
+import androidx.core.graphics.toColorInt
 
 class MWebChromeClient1234(
     var childLayout: RelativeLayout,
@@ -34,7 +35,7 @@ class MWebChromeClient1234(
     private val cm: CookieManager
 
 
-    private var mView: UWView? = null
+    private lateinit var mView: UWView
 
 
     init {
@@ -75,11 +76,11 @@ class MWebChromeClient1234(
             browserLayout!!.removeAllViews()
         }
         // make the child web view's layout visible
-        childLayout.setVisibility(View.VISIBLE)
+        childLayout.visibility = View.VISIBLE
 
         // now create a new web view
         mView = UWView(myActivity)
-        mView!!.getSettings().setSupportZoom(false)
+        mView.getSettings().setSupportZoom(false)
         mView!!.getSettings().setDefaultTextEncodingName("utf-8")
         mView!!.getSettings().setLoadWithOverviewMode(true)
 
@@ -129,7 +130,7 @@ class MWebChromeClient1234(
         )
         //mView.getSettings().setUserAgentString(...);
         if (BuildConfig.DEBUG) {
-            mView!!.setBackgroundColor(Color.parseColor("#80770000"))
+            mView!!.setBackgroundColor("#80770000".toColorInt())
         }
         val var0: WebViewClient = object : CustomWebViewClient0(
             "@@@@@@@not use@@@@@@@@",
@@ -172,7 +173,7 @@ class MWebChromeClient1234(
             //                //@@@titleText.setText(view.getTitle());
             //            }
         }
-        mView!!.webViewClient = var0
+        mView.webViewClient = var0
 
 
         /**@@@@@@@@@@@@@@@@@@@@@@@@@@@

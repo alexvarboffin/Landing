@@ -28,9 +28,10 @@ import com.walhalla.ui.plugins.Module_U.moreApp
 import com.walhalla.ui.plugins.Module_U.shareThisApp
 import com.walhalla.webview.ReceivedError
 import java.util.concurrent.TimeUnit
+import androidx.core.view.get
 
-class MainActivity : WebActivity() {
-    protected var doubleBackToExitPressedOnce: Boolean = false
+open class MainActivity : WebActivity() {
+    private var doubleBackToExitPressedOnce: Boolean = false
     private var mHandler: Handler? = null
 
 
@@ -44,7 +45,7 @@ class MainActivity : WebActivity() {
 
     private var mThread: Thread? = null
 
-    private var binding: MainBinding? = null
+    private lateinit var binding: MainBinding
 
     //private ActivityCollapsingToolbarBinding binding;
     //private ActivityGlassCollapsinToolbarBinding binding;
@@ -69,7 +70,7 @@ class MainActivity : WebActivity() {
 
         //binding = ActivityGlassToolbarBinding.inflate(getLayoutInflater());
         binding = MainBinding.inflate(layoutInflater)
-        setContentView(binding!!.root)
+        setContentView(binding.root)
         mHandler = Handler()
         //Handler handler = new Handler(Looper.getMainLooper());
         //presenter = new WPresenterImpl(handler, this);
@@ -122,12 +123,16 @@ class MainActivity : WebActivity() {
 //        if (savedInstanceState != null) {
 //            return;
 //        }
-        setUpNavigationView(binding!!.navView)
+        setUpNavigationView(binding.navView)
 
 
         //@@@ switchViews(true);
         switchViews(false)
-        presenter!!.generateViews(this, binding!!.contentMain, presenter0)
+
+
+            //if (savedInstanceState == null) {
+            presenter!!.generateViews(this, binding.contentMain, presenter0)
+        //}
 
 
         //setDrawerEnabled((menu.size()>1));
@@ -135,7 +140,7 @@ class MainActivity : WebActivity() {
 
         //При старте приложения, автоматом выбираем 1 пункт меню
         if (savedInstanceState == null) {
-            val menu = binding!!.navView.menu
+            val menu = binding.navView.menu
             //            MenuItem m = menu.getItem(0);
 //            if (m.hasSubMenu()) {
 //                MenuItem s = m.getSubMenu().getItem(0);
@@ -144,7 +149,7 @@ class MainActivity : WebActivity() {
 //            } else {
 //                onNavigationItemSelected(m);
 //            }
-            val m = menu.getItem(0) //promo
+            val m = menu[0] //promo
             //MenuItem m = menu.getItem(1);
             mm!!.onNavigationItemSelected(m)
             switchViews(false)
@@ -153,8 +158,8 @@ class MainActivity : WebActivity() {
 
         //        binding.@@@@@@(v -> {
 //            final Menu menu = binding.navView.getMenu();
-        /**/            MenuItem m = menu . getItem (0);
-        * /            if (m.hasSubMenu()) {
+        /*            MenuItem m = menu . getItem (0);
+                    if (m.hasSubMenu()) {
             * /                MenuItem s = m.getSubMenu().getItem(0);
             * /                onNavigationItemSelected(s);
             * /                switchViews(false);
@@ -180,7 +185,7 @@ class MainActivity : WebActivity() {
     private fun setUpNavigationView(navView: NavigationView) {
         val menu = navView.menu
         navView.setNavigationItemSelectedListener(mm)
-        val item = menu.getItem(0)
+        val item = menu[0]
         if (item.hasSubMenu()) {
             mm!!.setupDrawer(this, item.subMenu)
         } else {
@@ -219,12 +224,12 @@ class MainActivity : WebActivity() {
 
     fun switchViews(b: Boolean) {
         if (b) {
-            binding!!.contentFake.visibility = View.VISIBLE
-            binding!!.contentMain.visibility = View.GONE
+            binding.contentFake.visibility = View.VISIBLE
+            binding.contentMain.visibility = View.GONE
             //getSupportActionBar().setTitle("...");
         } else {
-            binding!!.contentFake.visibility = View.GONE
-            binding!!.contentMain.visibility = View.VISIBLE
+            binding.contentFake.visibility = View.GONE
+            binding.contentMain.visibility = View.VISIBLE
             //getSupportActionBar().setTitle(R.string.app_name);
         }
     }
