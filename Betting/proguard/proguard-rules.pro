@@ -58,7 +58,7 @@
 -packageobfuscationdictionary ../dictionaries/package.txt
 
 
-##@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-flattenpackagehierarchy 'xxx'#xxxxx
+##___-flattenpackagehierarchy 'xxx'#xxxxx
 
 
 

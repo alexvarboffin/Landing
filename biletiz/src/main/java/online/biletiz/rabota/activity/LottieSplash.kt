@@ -294,7 +294,7 @@ class LottieSplash : AppCompatActivity() {
      */
     private fun createTimer() {
         //final TextView counterTextView = findViewById(R.id.timer);
-        countDownTimer = object : CountDownTimer(Cfg9.cfg.getCounterTimeMs(), 1000) {
+        countDownTimer = object : CountDownTimer(Cfg9.cfg.counterTimeMs, 1000) {
             override fun onTick(millisUntilFinished: Long) {
                 secondsRemaining = ((millisUntilFinished / 1000) + 1)
                 //counterTextView.setText("" + secondsRemaining);

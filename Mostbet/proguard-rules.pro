@@ -43,7 +43,7 @@
 #D:\android\GitHub\facebook\proguard\examples\dictionaries\keywords.txt
 
 
-#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-flattenpackagehierarchy 'xxx'#xxxxx
+#___-flattenpackagehierarchy 'xxx'#xxxxx
 
 
 #-keep public class * extends android.app.Activity

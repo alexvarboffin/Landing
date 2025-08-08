@@ -91,7 +91,10 @@ include(":biletiz")
 //include(":libSimpleCore")
 //include(":Dashboard")
 //include(":CINEMA:Royspins")
+
 include(":CINEMA:Lordseriala")
+include(":CINEMA:KINOBAY")
+
 
 
 //include(":Simple0")
