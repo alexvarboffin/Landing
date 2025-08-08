@@ -12,6 +12,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/CINEMA" />
+            <option value="$PROJECT_DIR$/CINEMA/KINOBAY" />
             <option value="$PROJECT_DIR$/CINEMA/Lordseriala" />
             <option value="$PROJECT_DIR$/T_Simple" />
             <option value="$PROJECT_DIR$/T_Simple/BetAps" />

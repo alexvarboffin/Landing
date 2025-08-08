@@ -14,10 +14,10 @@
       <SelectionState runConfigName="microchecker">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="CINEMA.Royspins">
+      <SelectionState runConfigName="CINEMA.Lordseriala">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="CINEMA.Lordseriala">
+      <SelectionState runConfigName="CINEMA.KINOBAY">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>
