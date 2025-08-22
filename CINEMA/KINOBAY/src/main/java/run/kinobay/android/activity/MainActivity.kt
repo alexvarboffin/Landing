@@ -1,8 +1,8 @@
-package life.lordseriala.android.activity
+package run.kinobay.android.activity
 
 import com.walhalla.landing.activity.CinemaWebActivity
 import com.walhalla.landing.config.Cfg
-import life.lordseriala.android.Cfg9
+import run.kinobay.android.Cfg9
 
 
 class MainActivity(

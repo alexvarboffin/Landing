@@ -31,7 +31,6 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         multiDexEnabled = true
     }
-
     signingConfigs {
 
         create("x") {
@@ -41,6 +40,7 @@ android {
             storePassword = "release"
         }
     }
+
 
     buildTypes {
         getByName("debug") {

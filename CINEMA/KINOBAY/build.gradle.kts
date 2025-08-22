@@ -18,16 +18,16 @@ android {
     compileSdk = libs.versions.android.compileSdk.get().toInt()
     buildToolsVersion = libs.versions.android.buildTools.get()
 
-    namespace = "life.lordseriala.android"
+    namespace = "run.kinobay.android"
 
     defaultConfig {
         vectorDrawables.useSupportLibrary = true
-        applicationId = "life.lordseriala.android"
+        applicationId = "run.kinobay.android"
         minSdk = libs.versions.android.minSdk.get().toInt()
         targetSdk = libs.versions.android.targetSdk.get().toInt()
         versionCode = versionCodeDate()
         versionName = "1.1.$versionCode.release"
-        setProperty("archivesBaseName", "life.lordseriala.android_$versionCode")
+        setProperty("archivesBaseName", "run.kinobay.android_$versionCode")
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         multiDexEnabled = true
     }
@@ -47,7 +47,7 @@ android {
             signingConfig = signingConfigs.getByName("debug")
         }
         getByName("release") {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
             isShrinkResources = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),

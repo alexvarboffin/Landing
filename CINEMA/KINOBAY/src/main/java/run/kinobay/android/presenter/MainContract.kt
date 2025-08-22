@@ -1,4 +1,4 @@
-package life.lordseriala.android.presenter
+package run.kinobay.android.presenter
 
 import android.content.Context
 import com.walhalla.landing.pagination.CatItem

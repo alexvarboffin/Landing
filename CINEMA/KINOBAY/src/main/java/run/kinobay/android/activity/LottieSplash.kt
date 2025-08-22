@@ -1,4 +1,4 @@
-package life.lordseriala.android.activity
+package run.kinobay.android.activity
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
@@ -25,12 +25,12 @@ import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.progressindicator.CircularProgressIndicator
-import life.lordseriala.android.Cfg9
-import life.lordseriala.android.R
+import run.kinobay.android.Cfg9
+import run.kinobay.android.R
 
 import com.walhalla.landing.utility.NetUtils
 import com.walhalla.ui.plugins.Module_U.actionWirelessSettings
-import life.lordseriala.android.databinding.SplashMicrocheckerBinding
+import run.kinobay.android.databinding.SplashMicrocheckerBinding
 import java.util.Calendar
 
 @SuppressLint("CustomSplashScreen")

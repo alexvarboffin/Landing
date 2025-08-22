@@ -1,9 +1,9 @@
-package life.lordseriala.android.adapter
+package run.kinobay.android.adapter
 
 import android.content.Context
 import android.os.Handler
-import life.lordseriala.android.presenter.AbstractPresenter
-import life.lordseriala.android.presenter.MainContract
+import run.kinobay.android.presenter.AbstractPresenter
+import run.kinobay.android.presenter.MainContract
 import com.walhalla.landing.pagination.CatItem
 import com.walhalla.ui.DLog.d
 import com.walhalla.ui.DLog.handleException

@@ -1,7 +1,8 @@
-package life.lordseriala.android
+package run.kinobay.android
 
 import android.util.SparseIntArray
 import com.walhalla.landing.config.Cfg
+
 
 object Cfg9 {
     //public static final boolean AD_MOB_ENABLED = false;

@@ -1,4 +1,4 @@
-package life.lordseriala.android.activity
+package run.kinobay.android.activity
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -7,8 +7,8 @@ import android.os.Bundle
 import android.widget.ProgressBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import life.lordseriala.android.Cfg9.cfg
-import life.lordseriala.android.R
+import run.kinobay.android.Cfg9.cfg
+import run.kinobay.android.R
 
 @SuppressLint("CustomSplashScreen")
 class SplashScreenActivity : AppCompatActivity() {

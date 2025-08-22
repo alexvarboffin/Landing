@@ -6,7 +6,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:name="life.lordseriala.android.App"
+        android:name=".App"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -20,7 +20,7 @@
 <!--        com.royspins.app.SplashScreenActivity-->
 
         <activity
-            android:name="life.lordseriala.android.activity.MainActivity"
+            android:name=".activity.MainActivity"
             android:exported="true"
             android:noHistory="true"
 
@@ -51,14 +51,14 @@
             android:name="com.walhalla.landing.activity.AboutActivity"
             android:configChanges="keyboard|keyboardHidden|orientation"
             android:noHistory="true"
-            android:parentActivityName="life.lordseriala.android.activity.MainActivity"
+            android:parentActivityName="run.kinobay.android.activity.MainActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity,UnusedAttribute" />
 
         <activity
-            android:name="life.lordseriala.android.activity.ContactActivity"
+            android:name="run.kinobay.android.activity.ContactActivity"
             android:noHistory="true"
-            android:parentActivityName="life.lordseriala.android.activity.MainActivity"
+            android:parentActivityName="run.kinobay.android.activity.MainActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity,UnusedAttribute" />
 

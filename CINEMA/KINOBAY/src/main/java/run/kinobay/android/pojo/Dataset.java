@@ -1,4 +1,4 @@
-package life.lordseriala.android.pojo;
+package run.kinobay.android.pojo;
 
 import androidx.annotation.Keep;
 

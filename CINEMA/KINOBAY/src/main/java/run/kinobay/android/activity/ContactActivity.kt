@@ -1,11 +1,10 @@
-package life.lordseriala.android.activity
+package run.kinobay.android.activity
 
 import android.Manifest
 import android.annotation.SuppressLint
 import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.content.pm.PackageManager
-import android.net.Uri
 import android.os.Bundle
 import android.text.SpannableString
 import android.text.style.UnderlineSpan
@@ -24,8 +23,8 @@ import com.walhalla.ui.plugins.Launcher.openBrowser
 import com.walhalla.webview.CustomWebViewClient
 import androidx.core.util.size
 import androidx.core.net.toUri
-import life.lordseriala.android.Cfg9
-import life.lordseriala.android.R
+import run.kinobay.android.Cfg9
+import run.kinobay.android.R
 
 class ContactActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,4 +1,4 @@
-package life.lordseriala.android;
+package run.kinobay.android;
 
 import androidx.multidex.MultiDexApplication;
 
